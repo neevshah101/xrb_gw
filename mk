@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pdflatex sample701.tex
-bibtex sample701
-pdflatex sample701.tex
-pdflatex sample701.tex
+pdflatex xrb_gw.tex
+bibtex xrb_gw
+pdflatex xrb_gw.tex
+pdflatex xrb_gw.tex
