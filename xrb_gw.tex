@@ -77,6 +77,9 @@
 \newcommand{\vdag}{(v)^\dagger}
 \newcommand\aastex{AAS\TeX}
 \newcommand\latex{La\TeX}
+
+\newcommand{\Mdot}{M_{\odot}}
+\newcommand{\Rdot}{R_{\odot}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% The following section outlines numerous optional output that
@@ -415,6 +418,17 @@ Secondly, our donor models at carbon depletion have a total mass of $13.3M_{\odo
 \section{GW190814}
 
 GW190814 was an exceptional event that consisted of a merger between a 23Msun black hole and 2.5Msun compact object. The GW data alone was not enough to characterize the black hole or neutron star nature of the less massive compact object, and the formation of such a system of such an asymmetric mass ratio has been puzzling for standard formation channels. 
+
+\subsection{MESA model}
+
+A key difference for stars at lower metallicity is that the wind mass loss becomes signifcantly weaker. From our previous MESA models at solar metallicity, we saw that the mass loss during the "WR phase" (core--helium burning) is extremely important in getting the donor star's mass down to what we expect from our monte carlo simulations. Utilizing the same stellar masses and computing their binary evolution at lower metallicity would leave us with pre-SN donor stars with sufficiently high masses that would likely fail to explode. This motivates us to lower the initial masses of our stars while trying to model the progentior of a GW190814--like system at lower metallicity. For our fiducial GW190814--like model, we start with a binary of $30M_{\odot}+25M_{\odot}$ in a 3 day orbit. We show the evolution of this binary on the HR diagram in Fig. \ref{fig:gw_hr}. Qualitatively, it follows a similar pathway as our fiducial XRB model. As stars at lower metallicity are more compact, mass transfer begins slightly later in the evolution. After $5.1 \rm Myr$, the donor star overflows its roche lobe during the MS, initiating Case A mass transfer. This phase lasts around $1 \rm Myr$, after which the donor has reached TAMS and starts contracting, detaching itself from its RL. At this stage, the donor star has a mass of $19M_{\odot}$, while the accretor has grown to about $36\Mdot$. Due to the short orbital period, tidal effects keep the accretor below critical rotation, and mass transfer remains close to fully conservative. The donor soon re--expands once it starts hydrogen shell burning, and starts a second phase of Case AB mass transfer, similar to our fiducial XRB model. At the end of this phase, we are left with a a binary of $16.5\Mdot+38.3\Mdot$ in a tight $3.85d$ orbit. Around the same time, the donor contracts and ignites helium burning in its core, and the star has a mass of $14.4\Mdot$ at helium depletion, with a carbon-oxygen core mass of $12.3\Mdot$, and a $\rm C/O$ ratio of $0.36$, which is roughly similar to what we got for our fiducial XRB. On the other hand, the accretor, which is now the more massive star in this system has a mass of $38.5\Mdot$. Assuming that the donor star successfully explodes and leaves behind a NS or a low mass BH similar to $2.5M_{\odot}$, and the strength and direction of the natal kick, we can have a variety of outcomes. Large enough kicks can potentially disrupt the binary itself, while low kicks would just slightly widen the orbit. The now more massive star will continue growing as its burns hydrogen in its core, and begin a phase of reverse MT if it overflows its RL. The outcome of a phase of reverse RLOF onto a compact object sensitively depends on the evolutionary state of the star at that point. Due to the highly assymetric mass ratio, MT is likely going to be unstable and a CE phase is likely. If the star interacts while it is still on or just past its MS, its envelope binding energies are likely going to be sufficeintly high that it would meet the same fate as out fiducial XRB and form a transient/TZO. However, if the natal kick to the first born CO is large enough but not leading to disruption, the binary can be pushed into a wide orbit where the reverse MT starts much later in the evolution of the star. This is crucial for the successful ejection of a CE, as donor stars with large and loosely bound convective envelopes are easier to eject. The star will likely develop a loosely bound convective envelope once it has expanded sufficeintly and become cool enough to be a RSG. Interaction during the RSG phase significantly increases the possibility of a successful CE ejection, and we would be left behind with a tight binary, consisting of a helium core of about $20\Mdot$ and a $2.5\Mdot$ CO. Such a massive helium core is expected to implode and form a $20\Mdot$ BH without a natal kick. We are now left with a DCO system consisting of a $20\Mdot$ BH and a $2.5\Mdot$ CO, which would then merge after a GW driven inspiral. Such a system would appear to be similar in compact object masses to GW190814. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{gw_fiducial_hr.pdf}
+    \caption{This is a caption for your figure.}
+    \label{fig:gw_hr}
+\end{figure}
 
 \section{Future evolution}
 
