@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex xrb_gw"] 1755557825.57043 "xrb_gw.aux" "xrb_gw.bbl" "xrb_gw" 1755557826.66089 0
+["bibtex xrb_gw"] 1755646822.29569 "xrb_gw.aux" "xrb_gw.bbl" "xrb_gw" 1755646823.38728 0
   "./aasjournalv7.bst" 1755047648.66759 38788 af6489f4b275f4b9c2f0b12c5ef4a113 ""
-  "./xrb_gw.bib" 1755047656.42019 17429 f3eaf2fd329c9f1ca07e34b9ab463f3f ""
-  "xrb_gw.aux" 1755557826.37703 7247 fd131d3ecd2e54034e4412f55ba0d12d "pdflatex"
+  "./xrb_gw.bib" 1755646527.48673 19479 e236149a093a35412afea4a67bd28a84 ""
+  "xrb_gw.aux" 1755646823.10247 9559 08ce3a843f49c30300cb1abb77e2d9e3 "pdflatex"
   (generated)
   "xrb_gw.bbl"
   "xrb_gw.blg"
   (rewritten before read)
-["pdflatex"] 1755557825.68255 "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" "xrb_gw.pdf" "xrb_gw" 1755557826.66103 0
-  "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" 1755557824.29073 60810 e48b7eb8f22f7f6dc87efe6413cd8245 ""
+["pdflatex"] 1755646822.41118 "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" "xrb_gw.pdf" "xrb_gw" 1755646823.38743 0
+  "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" 1755646821.05866 62024 e019b1c30ed3e0179d23dcfb35c48103 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
@@ -143,10 +143,10 @@
   "xrb_alpha_ce.pdf" 1755124549.08871 134901 7306fbc7d4f9010b7f8de9a5b488db2f ""
   "xrb_be.pdf" 1755122910.53014 134666 233abe2b2b31d83543fb944c5ec1402a ""
   "xrb_fiducial_hr.pdf" 1755047612.67276 162734 3b5c6a0471b61d9e5f4eba51e9b8c020 ""
-  "xrb_gw.aux" 1755557826.37703 7247 fd131d3ecd2e54034e4412f55ba0d12d "pdflatex"
-  "xrb_gw.bbl" 1755557825.68012 5730 70956627a24c4f788baa6bfe381401ab "bibtex xrb_gw"
-  "xrb_gw.out" 1755557826.37812 2278 ee4bb47d7e04b0a5f5e3f2c809d85e77 "pdflatex"
-  "xrb_gw.tex" 1755557824.29073 60810 e48b7eb8f22f7f6dc87efe6413cd8245 ""
+  "xrb_gw.aux" 1755646823.10247 9559 08ce3a843f49c30300cb1abb77e2d9e3 "pdflatex"
+  "xrb_gw.bbl" 1755646822.40883 8455 fb5704f3d46f719b47c3308a36491f46 "bibtex xrb_gw"
+  "xrb_gw.out" 1755646823.1036 2278 ee4bb47d7e04b0a5f5e3f2c809d85e77 "pdflatex"
+  "xrb_gw.tex" 1755646821.05866 62024 e019b1c30ed3e0179d23dcfb35c48103 ""
   (generated)
   "xrb_gw.aux"
   "xrb_gw.log"
