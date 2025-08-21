@@ -82,6 +82,8 @@
 \newcommand{\Rdot}{\mathrm{R}_{\odot}}
 \newcommand{\Myr}{\mathrm{Myr}}
 \newcommand{\red}{\textcolor{red}}
+\newcommand{\mr}[1]{\textcolor{green!80!black}{MR:#1}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% The following section outlines numerous optional output that
@@ -258,7 +260,7 @@ We simulate the evolution of massive binaries using \texttt{MESA} (version xxx).
 \end{enumerate}
 }
 
-We use the Ledoux criterion to model convection, and assume a mixing length parameter of 2.0. We include semiconvection ($\alpha_{sc}=1$), and thermohaline mixing ($\alpha_{th}=1$). To account for convective boundary overshooting above the core, we use the exponentional model as implemented in MESA, and we do not account for convective boundary overshooting for off-center convective layers. To aid in regions at the eddington limit where convection is also inefficient, we utilize the local implicit enhancement of the convective flux in superadiabatic regions introduced in \cite{jermyn:23}% \texttt{MESA} 15140
+We use the Ledoux criterion to model convection, and assume a mixing length parameter of 2.0. We include semiconvection ($\alpha_{sc}=1$), and thermohaline mixing ($\alpha_{th}=1$). To account for convective boundary overshooting above the core, we use the exponentional model as implemented in MESA, and we do not account for convective boundary overshooting for off-center convective layers. To aid in regions at the eddington limit where convection is also inefficient, we utilize the local implicit enhancement of the convective flux in superadiabatic regions introduced \mr{in \cite{jermyn:23}}% \texttt{MESA} 15140
 (\texttt{use superad reduction = .true.}).
 
 For modeling rotation, we use the "shellular" approximation where the angular velocities $\omega$ are fixed on isobaric surfaces (which assumes strong anisotropic horizontal turbulence). We also assume rigid rotation at the beginning of our runs. We include several rotational mixing processes, and also enhanced wind mass loss due to rotation to keep the star to rotate subscritically. We turn off rotation in the donor to avoid numerical issues, and because the spin of the compact object is largely unconstrainted for our XRB. Meanwhile, the companion is a visible star with a $vsin(i)$ measurement, and hence we do not ignore rotation in the accretor star. We do not believe that the rotation of the donor star has a significant effect in the interpretation of our results.
