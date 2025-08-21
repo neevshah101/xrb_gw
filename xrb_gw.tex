@@ -81,6 +81,7 @@
 \newcommand{\Mdot}{\mathrm{M}_{\odot}}
 \newcommand{\Rdot}{\mathrm{R}_{\odot}}
 \newcommand{\Myr}{\mathrm{Myr}}
+\newcommand{\red}{\textcolor{red}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% The following section outlines numerous optional output that
@@ -117,7 +118,7 @@
 
 \begin{document}
 
-\title{Weird stuff from not so weird stuff\footnote{Footnotes can be added to titles}}
+\title{Weird stuff from not so weird stuff}%\footnote{Footnotes can be added to titles}}
 
 %% A significant change from AASTeX v6+ is in the author blocks. Now an email
 %% address is required for each author. This means that each author requires
@@ -194,21 +195,7 @@
 %% Mark off the abstract in the ``abstract'' environment. 
 \begin{abstract}
 
-This example manuscript is intended to serve as a tutorial and template for
-authors to use when writing their own AAS Journal articles. The manuscript
-includes a history of \aastex\ and documents the new features in the
-previous versions as well as the new features in version 7. This
-manuscript includes many figure and table examples to illustrate these new
-features.  Information on features not explicitly mentioned in the article
-can be viewed in the manuscript comments or more extensive online
-documentation. Authors are welcome replace the text, tables, figures, and
-bibliography with their own and submit the resulting manuscript to the AAS
-Journals peer review system.  The first lesson in the tutorial is to remind
-authors that the AAS Journals, the Astrophysical Journal (ApJ), the
-Astrophysical Journal Letters (ApJL), the Astronomical Journal (AJ), and 
-the Planetary Science Journal (PSJ) all have a 250 word limit for the 
-abstract. The limit is 150 for RNAAS manuscripts. If you exceed this length 
-the Editorial office will ask you to shorten it. This abstract has 189 words.
+\red{TBA}
 
 \end{abstract}
 
@@ -220,7 +207,7 @@ the Editorial office will ask you to shorten it. This abstract has 189 words.
 %% to include these concepts in their preprints.
 %%
 %% You can use the \uat command to link your UAT concepts back its source.
-\keywords{\uat{Galaxies}{573} --- \uat{Cosmology}{343} --- \uat{High Energy astrophysics}{739} --- \uat{Interstellar medium}{847} --- \uat{Stellar astronomy}{1583} --- \uat{Solar physics}{1476}}
+\keywords{\red{TBA}}%\uat{Galaxies}{573} --- \uat{Cosmology}{343} --- \uat{High Energy astrophysics}{739} --- \uat{Interstellar medium}{847} --- \uat{Stellar astronomy}{1583} --- \uat{Solar physics}{1476}}
 
 %% From the front matter, we move on to the body of the paper.
 %% Sections are demarcated by \section and \subsection, respectively.
@@ -233,7 +220,7 @@ the Editorial office will ask you to shorten it. This abstract has 189 words.
 %% automatically renumber them.
 
 \section{Introduction}
-
+\red{
 \begin{enumerate}
     \item Background
     \item Introduce XRBs, runaways, HMXBs - 4U1700-37 - well studied, many observational constraints - not well known if NS or not
@@ -245,6 +232,7 @@ the Editorial office will ask you to shorten it. This abstract has 189 words.
     \item Why is it important
     \item Describe paper outline
 \end{enumerate}
+}
 
 Massive stars ($> 8-10\,\Mdot$) end their lives in energetic explosions or implosions, leaving behind a compact object remnant like a black hole (BH) or a neutron star (NS). Since most massive stars live in binaries and higher order systems \cite{2012Sci...337..444S,2023ASPC..534..275O}, they are likely to interact at some point in their short lifetimes. Such systems are thought to be the progenitors of a wide range of high energy phenomena, such as X-ray binaries (XRB), stripped envelope supernovae, gravitational wave (GW) sources \cite{2023PhRvX..13d1039A}, gamma--ray bursts (GRB), and various other transients. The formation of such systems is directly affected by the uncertainties in our understanding of massive stars, such as the wind mass loss rates in various phases of evolution, impact of rotation and other mixing processes, and their explodability which determines whether they form NS's, direct collapse BH's, or fallback BH's. These in turn couple with the uncertainties in binary evolution such as the stability and conservativeness of mass transfer (MT), common envelope (CE) evolution, and the transport of matter and angular momentum from one star to its companion. 
 
@@ -262,11 +250,13 @@ In Section (Methods), we describe our setup for computing the evolution of a bin
 
 We simulate the evolution of massive binaries using \texttt{MESA} (version xxx). Our inlists and choice of input parameters are public (zenodo/github) and we descirbe some of the important ones below.
 
+\red{
 \begin{enumerate}
     \item MESA (star) - basic stellar physics assumptions - MLT, overshooting, other mixing, rotation, winds, supereddington treatment
     \item MESA (binary) - Two stars evolved self consistently, along with orbit equations. Treatment of mass transfer (Kolb \& Ritter), AM transport, loss from system, tides, rotationally enhanced winds. Rotation only included in accretor, turned off in donor - justify why? 
     \item Monte Carlo - Outcome of supernova in a binary - Assumptions: Pre-SN circular orbits, instantaneous mass loss, Blauuw kick, Natal kick. Mass loss and kick vector gives post-SN orbital parameters, systemic velocity and eccentricity.
 \end{enumerate}
+}
 
 We use the Ledoux criterion to model convection, and assume a mixing length parameter of 2.0. We include semiconvection ($\alpha_{sc}=1$), and thermohaline mixing ($\alpha_{th}=1$). To account for convective boundary overshooting above the core, we use the exponentional model as implemented in MESA, and we do not account for convective boundary overshooting for off-center convective layers. To aid in regions at the eddington limit where convection is also inefficient, we utilize the local implicit enhancement of the convective flux in superadiabatic regions introduced in \texttt{MESA} 15140 (\texttt{use superad reduction = .true.}).
 
@@ -292,7 +282,7 @@ A combination of these affects can lead to diverse outcomes post explosion. A bi
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{xrb-monte-carlo-mass-period-kick.pdf}
-    \caption{This is a caption for your figure.}
+    \caption{\red{TBA}}
     \label{fig:xrb_monte_carlo}
 \end{figure}
 
@@ -300,6 +290,7 @@ A combination of these affects can lead to diverse outcomes post explosion. A bi
 
 \subsection{Monte Carlo Results}
 
+\red{
 \begin{enumerate}
     \item Describe what we are doing in this section - Infer pre-SN parameters of XRB from observational constraints
     \item Define relevant variables, initial population, assumptions (circular orbits) outcomes
@@ -309,6 +300,7 @@ A combination of these affects can lead to diverse outcomes post explosion. A bi
     \item Explain lower left corner gap in Pre-SN period - emphasize why kick is likely (based on MT period widening, Renzo+19), and kick needed to shrink
     \item Explain black shaded area - unlikelt to fit without RLOF, theoretcially not expected due to orbit widening, wind mass loss over kinematic age gives minimum period ~2d. In black is shown distribution for post-SN period >~2d
 \end{enumerate}
+}
 
 In this section, we describe the outcomes of our monte carlo simulations that simulate the effects of a supernova in a binary. Note that these are different from population synthesis simulations, as the initial binary population that we use is not observationally motivated, but is meant to explore the parameter space of interest relevant to the properties of the XRB. 
 
@@ -340,6 +332,7 @@ We thus find that there is a very narrow range of pre--SN periods ($1.5-2.5$ day
 
 \subsection{MESA-Model-XRB}
 
+\red{
 \begin{enumerate}
     \item Monte carlo constraints give us insight into past - conservative mass transfer (pre-SN mass), short period (pre-SN period)
     \item Progenitor system - 40+30, 3d. Case A MT
@@ -349,6 +342,7 @@ We thus find that there is a very narrow range of pre--SN periods ($1.5-2.5$ day
     \item Future of XRB - Binding energy curves, alpha common envelope, likely failure, TZO/transient
     \item Perhaps discuss here i) why do we need a natal kick, why not a common envelope, why not Case B (or place this somewhere else if more appropriate)
 \end{enumerate}
+}
 
 \subsection{Why do we need a natal kick?}
 
@@ -379,7 +373,7 @@ Our monte-carlo simulations imply that the progenitor star of the compact object
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{xrb_fiducial_hr.pdf}
-    \caption{This is a caption for your figure.}
+    \caption{\red{TBA}}
     \label{fig:xrb_fiducial_hr}
 \end{figure}
 
@@ -405,6 +399,7 @@ GW190814 was an exceptional event that consisted of a merger between a 23Msun bl
 
 \subsection{MESA model - GW190814}
 
+\red{
 \begin{enumerate}
     \item Based on "success" of XRB model, propose similar solution for GW190814
     \item What will be different here? - Why is XRB a TZO - kick strength and direction
@@ -415,13 +410,14 @@ GW190814 was an exceptional event that consisted of a merger between a 23Msun bl
     \item Evolve accretor as single star - next interaction depends on post-SN orbit. At smaller radii / lack of convective envelope / before RSG phase, binding energy high, merger likely. At larger radii, core envelope distincition, lower binding energy, CE ejection likely.
     \item End state - large BH (implosion) + NS/low mass BH (after successful explosion + strong kick) - asymmetric mass ratio GW event
 \end{enumerate}
+}
 
 A key difference for stars at lower metallicity is that the wind mass loss becomes signifcantly weaker. From our previous MESA models at solar metallicity, we saw that the mass loss during the "WR phase" (core--helium burning) is extremely important in getting the donor star's mass down to what we expect from our monte carlo simulations. Utilizing the same stellar masses and computing their binary evolution at lower metallicity would leave us with pre-SN donor stars with sufficiently high masses that would likely fail to explode. This motivates us to lower the initial masses of our stars while trying to model the progentior of a GW190814--like system at lower metallicity. For our fiducial GW190814--like model, we start with a binary of $30M_{\odot}+25M_{\odot}$ in a 3 day orbit. We show the evolution of this binary on the HR diagram in Fig. \ref{fig:gw_hr}. Qualitatively, it follows a similar pathway as our fiducial XRB model. As stars at lower metallicity are more compact, mass transfer begins slightly later in the evolution. After $5.1 \rm Myr$, the donor star overflows its roche lobe during the MS, initiating Case A mass transfer. This phase lasts around $1 \rm Myr$, after which the donor has reached TAMS and starts contracting, detaching itself from its RL. At this stage, the donor star has a mass of $19M_{\odot}$, while the accretor has grown to about $36\Mdot$. Due to the short orbital period, tidal effects keep the accretor below critical rotation, and mass transfer remains close to fully conservative. The donor soon re--expands once it starts hydrogen shell burning, and starts a second phase of Case AB mass transfer, similar to our fiducial XRB model. At the end of this phase, we are left with a a binary of $16.5\Mdot+38.3\Mdot$ in a tight $3.85d$ orbit. Around the same time, the donor contracts and ignites helium burning in its core, and the star has a mass of $14.4\Mdot$ at helium depletion, with a carbon-oxygen core mass of $12.3\Mdot$, and a $\rm C/O$ ratio of $0.36$, which is roughly similar to what we got for our fiducial XRB. On the other hand, the accretor, which is now the more massive star in this system has a mass of $38.5\Mdot$. Assuming that the donor star successfully explodes and leaves behind a NS or a low mass BH similar to $2.5M_{\odot}$, and the strength and direction of the natal kick, we can have a variety of outcomes. Large enough kicks can potentially disrupt the binary itself, while low kicks would just slightly widen the orbit. The now more massive star will continue growing as its burns hydrogen in its core, and begin a phase of reverse MT if it overflows its RL. The outcome of a phase of reverse RLOF onto a compact object sensitively depends on the evolutionary state of the star at that point. Due to the highly assymetric mass ratio, MT is likely going to be unstable and a CE phase is likely. If the star interacts while it is still on or just past its MS, its envelope binding energies are likely going to be sufficeintly high that it would meet the same fate as out fiducial XRB and form a transient/TZO. However, if the natal kick to the first born CO is large enough but not leading to disruption, the binary can be pushed into a wide orbit where the reverse MT starts much later in the evolution of the star. This is crucial for the successful ejection of a CE, as donor stars with large and loosely bound convective envelopes are easier to eject. The star will likely develop a loosely bound convective envelope once it has expanded sufficeintly and become cool enough to be a RSG. Interaction during the RSG phase significantly increases the possibility of a successful CE ejection, and we would be left behind with a tight binary, consisting of a helium core of about $20\Mdot$ and a $2.5\Mdot$ CO. Such a massive helium core is expected to implode and form a $20\Mdot$ BH without a natal kick. We are now left with a DCO system consisting of a $20\Mdot$ BH and a $2.5\Mdot$ CO, which would then merge after a GW driven inspiral. Such a system would appear to be similar in compact object masses to GW190814. 
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{gw_fiducial_hr.pdf}
-    \caption{This is a caption for your figure.}
+    \caption{\red{TBA}}
     \label{fig:gw_hr}
 \end{figure}
 
@@ -430,14 +426,14 @@ A key difference for stars at lower metallicity is that the wind mass loss becom
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{xrb_be.pdf}
-    \caption{This is a caption for your figure.}
+    \caption{\red{TBA}}
     \label{fig:xrb_be}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{xrb_alpha_ce.pdf}
-    \caption{This is a caption for your figure.}
+    \caption{\red{TBA}}
     \label{fig:xrb_alpha_ce}
 \end{figure}
 
@@ -463,6 +459,7 @@ We calculate the $\alpha_{\rm CE}$ as
 
 \section{Discussion} \label{sec:highlight}
 
+\red{
 \begin{enumerate}
     \item Very asymmetric HMXB in our own galaxy - well studied observationally, lots of constraints. Helps in charting past history
     \item sibling/analogous to GW190814 - insights from galactic binaries to weird low Z GW events
@@ -472,6 +469,7 @@ We calculate the $\alpha_{\rm CE}$ as
     \item Perhaps Case A is needed, as in Case B helium core is developed and may be unable to explode
     \item need successful explosion for both XRB/GW to form NS/low mass BH, and for GW need a strong natal kick as well
 \end{enumerate}
+}
 
 \section{Conclusion} \label{sec:cite}
 

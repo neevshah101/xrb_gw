@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex xrb_gw"] 1755731915.56472 "xrb_gw.aux" "xrb_gw.bbl" "xrb_gw" 1755732410.68903 0
+["bibtex xrb_gw"] 1755800799.08396 "xrb_gw.aux" "xrb_gw.bbl" "xrb_gw" 1755800800.17386 0
   "./aasjournalv7.bst" 1755047648.66759 38788 af6489f4b275f4b9c2f0b12c5ef4a113 ""
   "./xrb_gw.bib" 1755731338.73708 21125 bd0e444f0d60d5921f68d530552fe7af ""
-  "xrb_gw.aux" 1755732410.39686 9897 3c523632bead197d7d78cd265d5d5981 "pdflatex"
+  "xrb_gw.aux" 1755800799.89684 9897 237469ed44278cbd5423ae720a603629 "pdflatex"
   (generated)
   "xrb_gw.bbl"
   "xrb_gw.blg"
   (rewritten before read)
-["pdflatex"] 1755732409.61364 "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" "xrb_gw.pdf" "xrb_gw" 1755732410.68917 0
-  "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" 1755732409.36936 62724 e53e35329d2dda3d7c4a3e09d101c238 ""
+["pdflatex"] 1755800799.198 "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" "xrb_gw.pdf" "xrb_gw" 1755800800.174 0
+  "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" 1755800797.77051 61610 1c818be23c54732285e67440e4db3814 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
@@ -67,7 +67,6 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1248133631 24420 52dbb8e8aa0069a1b987309557f8d303 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
@@ -143,10 +142,10 @@
   "xrb_alpha_ce.pdf" 1755124549.08871 134901 7306fbc7d4f9010b7f8de9a5b488db2f ""
   "xrb_be.pdf" 1755122910.53014 134666 233abe2b2b31d83543fb944c5ec1402a ""
   "xrb_fiducial_hr.pdf" 1755047612.67276 162734 3b5c6a0471b61d9e5f4eba51e9b8c020 ""
-  "xrb_gw.aux" 1755732410.39686 9897 3c523632bead197d7d78cd265d5d5981 "pdflatex"
-  "xrb_gw.bbl" 1755731915.68246 9087 606e4834abe18d50af8d4755fa0421b6 "bibtex xrb_gw"
-  "xrb_gw.out" 1755732410.39766 2278 ee4bb47d7e04b0a5f5e3f2c809d85e77 "pdflatex"
-  "xrb_gw.tex" 1755732409.36936 62724 e53e35329d2dda3d7c4a3e09d101c238 ""
+  "xrb_gw.aux" 1755800799.89684 9897 237469ed44278cbd5423ae720a603629 "pdflatex"
+  "xrb_gw.bbl" 1755800799.19553 9087 606e4834abe18d50af8d4755fa0421b6 "bibtex xrb_gw"
+  "xrb_gw.out" 1755800799.898 2278 ee4bb47d7e04b0a5f5e3f2c809d85e77 "pdflatex"
+  "xrb_gw.tex" 1755800797.77051 61610 1c818be23c54732285e67440e4db3814 ""
   (generated)
   "xrb_gw.aux"
   "xrb_gw.log"
