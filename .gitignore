@@ -3,4 +3,5 @@
 *.blg
 *log
 *.synctex.gz
+auto/*
 xrb_gw.pdf
