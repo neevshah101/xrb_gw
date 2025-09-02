@@ -83,6 +83,7 @@
 \newcommand{\Ldot}{\mathrm{L}_{\odot}}
 \newcommand{\Myr}{\mathrm{Myr}}
 \newcommand{\red}{\textcolor{red}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% The following section outlines numerous optional output that
@@ -221,42 +222,45 @@
 %% automatically renumber them.
 
 \section{Introduction}
-\red{
-\begin{enumerate}
-    \item Background
-    \item Introduce XRBs, runaways, HMXBs - 4U1700-37 - well studied, many observational constraints - not well known if NS or not
-    \item Introduce GWs  - GW190814 - unknown origin, conventionally difficult to form
-    \item Lower mass gap - GW190814, new NSBH GW, some EM observations in the mass gap as well. Unknown if real or not
-    \item Connection between XRBs and GWs - XRBs perhaps intermediate path.
-    \item Leverage XRB constraints to chart past history, connect it to GW190814 at low Z
-    \item What exactly are we trying to show? Forming asymmetric mass ratio systems starting from symmetric, followed by conservative mass transfer. Kick can lead to variety of outcomes, including XRBs, TZOs, GWs. GW190814 not a weirdo to be ignored
-    \item Why is it important
-    \item Describe paper outline
-\end{enumerate}
-}
 
-Massive stars ($> 8-10\,\Mdot$) end their lives in energetic explosions or implosions, leaving behind a compact object remnant like a black hole (BH) or a neutron star (NS) \red{(citation required)}. Since most massive stars live in binaries and higher order systems \citep{2012Sci...337..444S,2017ApJS..230...15M, 2023ASPC..534..275O}, they are likely to interact at some point in their short lifetimes \red{(few $\mathrm{Myr}$)}. Such systems are thought to be the progenitors of a wide range of high energy phenomena, such as X-ray binaries (XRB) \citep{2006csxs.book..623T}, stripped envelope supernovae (\red{citation required}), gravitational wave (GW) sources \citep{2017ApJ...846..170T, 2022PhR...955....1M, 2023PhRvX..13d1039A}, gamma--ray bursts (GRB) (\red{citation required}), and various other exotic transients \citep{2012ApJ...752L...2C,2022ApJ...932...84M}. \red{The formation of such systems is directly affected by the uncertainties in our understanding of massive stars, such as the wind mass loss rates in various phases of evolution, impact of rotation and other mixing processes, and their explodability which determines whether they form NS's, direct collapse BH's, or fallback BH's. These in turn couple with the uncertainties in binary evolution such as the stability and conservativeness of mass transfer (MT), common envelope (CE) evolution, and the transport of matter and angular momentum from one star to its companion.}
+% \begin{enumerate}
+%     \item Background
+%     \item Introduce XRBs, runaways, HMXBs - 4U1700-37 - well studied, many observational constraints - not well known if NS or not
+%     \item Introduce GWs  - GW190814 - unknown origin, conventionally difficult to form
+%     \item Lower mass gap - GW190814, new NSBH GW, some EM observations in the mass gap as well. Unknown if real or not
+%     \item Connection between XRBs and GWs - XRBs perhaps intermediate path.
+%     \item Leverage XRB constraints to chart past history, connect it to GW190814 at low Z
+%     \item What exactly are we trying to show? Forming asymmetric mass ratio systems starting from symmetric, followed by conservative mass transfer. Kick can lead to variety of outcomes, including XRBs, TZOs, GWs. GW190814 not a weirdo to be ignored
+%     \item Why is it important
+%     \item Describe paper outline
+% \end{enumerate}
+
+Massive stars ($> 8-10\,\Mdot$) end their lives in energetic explosions or implosions, leaving behind a compact object remnant like a black hole (BH) or a neutron star (NS) \citep{2025arXiv250214836J}. Since most massive stars live in binaries and higher order systems \citep{2012Sci...337..444S,2017ApJS..230...15M, 2023ASPC..534..275O}, they are likely to interact at some point in their short lifetimes \red{(few $\mathrm{Myr}$)}. Such systems are thought to be the progenitors of a wide range of high energy phenomena, such as X-ray binaries (XRB) \citep{2006csxs.book..623T}, stripped envelope supernovae \citep{2011MNRAS.412.1522S,2016MNRAS.457..328L}, gravitational wave (GW) sources \citep{2017ApJ...846..170T, 2022PhR...955....1M, 2023PhRvX..13d1039A}, gamma--ray bursts (GRB) \citep{2007A&A...465L..29C}, and various other transients \citep{2012ApJ...752L...2C,2022ApJ...932...84M,2023MNRAS.523.6041G}. %\red{The formation of such systems is directly affected by the uncertainties in our understanding of massive stars, such as the wind mass loss rates in various phases of evolution, impact of rotation and other mixing processes, and their explodability which determines whether they form NS's, direct collapse BH's, or fallback BH's. These in turn couple with the uncertainties in binary evolution such as the stability and conservativeness of mass transfer (MT), common envelope (CE) evolution, and the transport of matter and angular momentum from one star to its companion.}
+
+\red{A particularly interesting outcome of massive binary evolution is the presence of compact objects in binaries. In the local universe, these systems have been observed for decades as XRBs, where X-rays are detected from an accreting compact object orbiting a star. XRBs are an important probe to study the physics of accretion disks, and are also powerful sources of ionizing radiation that can be important for stellar feedback on galactic scales \citep{2012MNRAS.423.1641J}. More recently, Gaia has unraveled a small but gorwing population of non--interacting (detached) binaries that contain a comapct object such as a BH \citep{2023MNRAS.518.1057E,2023MNRAS.521.4323E,2024A&A...686L...2G} or NS \citep{2024OJAp....7E..58E}. An even rarer outcome of massive binary evolution are double compact binaries. Although a few DNS systems have been observed in the Galaxy through pulsar observations, double compact binaries are also strong sources of GWs, especially when they are close to merger. GWs from compact object mergers were directly detected for the first time in 2015. However, the sample has been rapidly growing since, with more than $200$ mergers in the latest catalog, GWTC-4.0 \citep{2025arXiv250818082T,2025arXiv250818083T}} 
 
 Among the many rare and common outcomes of binary evolution, XRBs and GW events provide a unique insight to the end stages of massive binaries. These systems require the presence of a compact object in the binary, which implies that the progenitor system consisted of at least one massive star that has reached the end of its life. While XRBs have been observationally studied in the Milky Way and nearby galaxy for decades, \red{GWs from compact object mergers were directly detected for the first time in 2015. However, the sample has been rapidly growing since, with more than $200$ mergers in the latest catalog, GWTC-4.0 \citep{2025arXiv250818082T,2025arXiv250818083T}. While XRBs and compact binaries are extremely rare outcomes of binary evolution, they can provide unique constraints on binary interaction. Although few presently observed XRBs in the local universe will result in merging compact binaries in the future \citep{2006ARA&A..44...49R, 2022ApJ...929L..26F}, any compact binary merger originating from isolated binary evolution will experience a (brief) XRB during its evolution. More recently, many compact objects orbiting stars in detached binary systems are being discovered in our Galaxy with Gaia astrometry. This growing catalog includes 3 BH's, Gaia BH1 \citep{2023MNRAS.518.1057E}, Gaia BH2 \citep{2023MNRAS.521.4323E}, Gaia BH3 \citep{2024A&A...686L...2G} and several candidate NS's \citep{2024OJAp....7E..58E}. Different observational techniques probe different (although sometimes overlapping) regions of the parameter space of binaries containing compact objects. Observations in the local universe probe binaries that have formed in solar--like metallicity environments (although see Gaia BH3 \cite{2024A&A...686L...2G}), while GW observations in the distant universe are more likely to come from low metallicity environments. The growing catalog of GWs also contains several outliers \citep{2020ApJ...896L..44A,2025arXiv250708219T,2024ApJ...970L..34A} that do not fit in well with the general population, and often need to be left out of analyses of the population properties. However, including (or excluding) outliers can significantly bias population parameters such as the minimum/ maximum mass of compact objects, the presence and location of any mass gaps in the population, and their correlation with other properties such as spin/ redshift.} This provides a complementary insight to their formation. In the local universe, XRBs can be well studied and allow for an accurate measurement of component masses and various other properties of the binary orbit and the visible star. Since an XRB necessarily requires the binary to be bound after the first SN (or implosion), their rates also sensitively depend on the strength of the natal kicks received to the compact objects at the time of explosion (implosion) \red{(citation required)}. Such natal kicks often unbind the binary, ejecting the compact object and its companion in different directions \footnote{\red{Although not necessarily opposite as part of the momentum leaves with the SN ejecta (including the neutrinos) \citep{2020MNRAS.498..899N, 2012ARNPS..62..407J, 2017ApJ...837...84J}.}}. However, if the binary remains bound, it can also gain a systemic velocity depending on the mass lost at the time of SN and strength and direction of the natal kick. \red{Most high--mass XRBs (HMXB) are indeed seen to be runaway systems, where they are observed to be moving faster than the local ISM from their place of origin, which sometimes is a young or open cluster. If the visible star in the XRB also has kinematic constraints, such as its proper motion and radial velocities, one can accurately trace the binary in time to find its birth cluster. If such an exercise is successful, this can give us estimate of the time of SN in the binary (kinematic age), under the hypothesis that the system got ejected from its birthplace when one of the stars in the binary ended its life in an explosion. The systemic velocity can also constraint the amount of mass lost in the explosion, which sets the pre-SN mass of the star that exploded. If one is also able to estimate the age of the birth cluster, through isochrone fitting for example, we can obtain a lower limit to the initial mass of the star that exploded.} These observational constraints can help chart a pathway to recreating the past evolutionary history of the system, and provide a unique opportunity to test our models of massive binary evolution.  
 
 \subsection{Why care about outlier events?}
 
-\red{\begin{enumerate}
-    \item what makes them an outlier? why are they rare?
-    \item why are they interesting?
-    \item are they from distinct formation channels?
-    \item what issues/ biases do they cause in population inference?
-    \item are features in the population real or driven by enforced parametric models? role of outliers in this?
-    \item presence of mass gaps - min BH mass, mass ratio distribution, dependence on primary mass etc
-    \item characterizing outliers helps learn if they actually fit in well into the normal population, or they're reallyyy different
-    \item how do you classify a $\sim 2.5\,\Mdot$ compact object? Does it fit into NS population, or BH population?
-    \item XRB observations suggested lower mass gap, but compact objects in this gap have been found through both EM and GW observations. Is there a gap?
-    \item including low mass BH that are outliers could help in measuring minimum BH mass.
-    \item outlier status depends on assumed population prescription
-    \item different analyses find GW190814 to be an outlier or not
-    \item does minimum BH mass depend on primary mass?
-    \item different formation channels leave imprints on population distributions and correlations between different parameters
-\end{enumerate}}
+Outlier events challenge conventional channels for the formation of such systems. Due to their very nature of not fitting in well with the rest of the population, including or excluding them from analyses can significantly bias the inferred population parameters. It is important to carefully characterize and study them so as to understand whether they are true outliers that hint towards an exotic formation scenario, or are they just rare outcomes of an otherwise normal evolutionary pathway. 
+
+% \red{\begin{enumerate}
+%     \item what makes them an outlier? why are they rare?
+%     \item why are they interesting?
+%     \item are they from distinct formation channels?
+%     \item what issues/ biases do they cause in population inference?
+%     \item are features in the population real or driven by enforced parametric models? role of outliers in this?
+%     \item presence of mass gaps - min BH mass, mass ratio distribution, dependence on primary mass etc
+%     \item characterizing outliers helps learn if they actually fit in well into the normal population, or they're reallyyy different
+%     \item how do you classify a $\sim 2.5\,\Mdot$ compact object? Does it fit into NS population, or BH population?
+%     \item XRB observations suggested lower mass gap, but compact objects in this gap have been found through both EM and GW observations. Is there a gap?
+%     \item including low mass BH that are outliers could help in measuring minimum BH mass.
+%     \item outlier status depends on assumed population prescription
+%     \item different analyses find GW190814 to be an outlier or not
+%     \item does minimum BH mass depend on primary mass?
+%     \item different formation channels leave imprints on population distributions and correlations between different parameters
+% \end{enumerate}}
 
 
 The prototypical system for such a scenario is the HMXB 4U1700-37/ HD 153919. One of the first X--ray sources discovered in the 1970s, it consists of an O6.5 Iaf+ star, which is one of the most massive stars in known XRBs with an estimated mass of $40-60\,\Mdot$. The compact object in this system is equally interesting, with an estimated mass of $\red{\sim} 2.5\,\Mdot$, straddling the \red{``mass--gap"} between the heaviest neutron stars and lightest black holes. With the help of Gaia EDR3, and verified by \citep{2022MNRAS.511.4123H} using Gaia DR3, \citep{2021A&A...655A..31V} confirmed that this system originated from the young open cluster NGC 6231, and was ejected from it $\approx 2\,\Myr$ ago. Together with the young age of the NGC 6231 (few $\Myr$), this implies that the star that exploded had an initial mass $>\,30\,\Mdot$. The short period of the binary ($3.41$ days), highly asymmetric mass ratio, and age constraints have been challenging to interpret given our standard understand of binary evolution. \citep{2021A&A...655A..31V} proposed the system to have formed from a pair of massive stars that underwent mass transfer (MT) while the more massive (donor) star was stil on the Main Sequence (MS), termed as Case A MT. Given the short period of the binary today, they also hypothesized that the compact remnant received a natal kick in a favorable direction that shrank the orbit. The presence of a compact object in the mass--gap, and the highly asymmetric mass ratio of this system is particularly interesting, as it is very similar to GW190814, which also consisted of a merger between a compact object in the \textit{"lower mass gap"} and a $23\,\Mdot$ BH \citep{2020ApJ...896L..44A}. This event is also the most asymmetric merger seen in the first three observing runs of LIGO-Virgo-KAGRA (LVK), and has been challenging to interpret for most formation channels. Various explanations have been invoked for the formation of GW190814, such as a triple scenario requiring the merging of two NS's for creating a $2.5\,\Mdot$ compact object \citep{2021MNRAS.500.1817L}. Due to the mass segration in clusters, it is difficult to pair up compact objects of such unequal masses through dynamical interactions \red{(but see \citep{2021ApJ...908L..38A})}. While it may be possible to form such compact binaries through the isolated formation channel, this has been largely unexplored for the case of GW190814. Due to the unknown nature BH or NS nature of the lower mass compact object, it is also often categorized as an outlier to the BBH population. However, these results sensitively depend on the assumed parametric models for the mass distributions, and including or excluding it can significantly bias the minimum BH mass as measured on a population level \citep{2025arXiv250814159C,2021ApJ...913L...7A,2022ApJ...926...34E,2022ApJ...931..108F}. 
@@ -271,13 +275,13 @@ In Section \ref{sec:methods}, we describe our setup for computing the evolution 
 
 We simulate the evolution of massive binaries using \texttt{MESA (r24.08.01)} \citep{2011ApJS..192....3P,2013ApJS..208....4P,2015ApJS..220...15P,2018ApJS..234...34P,2019ApJS..243...10P,2023ApJS..265...15J}. Our inlists and choice of input parameters are public (\red{link zenodo/github}) and we mention some of the relevant parameters and assumptions below.
 
-\red{
-\begin{enumerate}
-    \item MESA (star) - basic stellar physics assumptions - MLT, overshooting, other mixing, rotation, winds, supereddington treatment
-    \item MESA (binary) - Two stars evolved self consistently, along with orbit equations. Treatment of mass transfer (Kolb \& Ritter), AM transport, loss from system, tides, rotationally enhanced winds. Rotation only included in accretor, turned off in donor - justify why? 
-    \item Monte Carlo - Outcome of supernova in a binary - Assumptions: Pre-SN circular orbits, instantaneous mass loss, Blauuw kick, Natal kick. Mass loss and kick vector gives post-SN orbital parameters, systemic velocity and eccentricity.
-\end{enumerate}
-}
+% \red{
+% \begin{enumerate}
+%     \item MESA (star) - basic stellar physics assumptions - MLT, overshooting, other mixing, rotation, winds, supereddington treatment
+%     \item MESA (binary) - Two stars evolved self consistently, along with orbit equations. Treatment of mass transfer (Kolb \& Ritter), AM transport, loss from system, tides, rotationally enhanced winds. Rotation only included in accretor, turned off in donor - justify why? 
+%     \item Monte Carlo - Outcome of supernova in a binary - Assumptions: Pre-SN circular orbits, instantaneous mass loss, Blauuw kick, Natal kick. Mass loss and kick vector gives post-SN orbital parameters, systemic velocity and eccentricity.
+% \end{enumerate}
+% }
 
 We use the Ledoux criterion \citep{1947ApJ...105..305L} to find convective zones, and assume a mixing length parameter of 2.0. We also include semiconvection ($\alpha_{\mathrm{sc}}=1$) \citep{1983A&A...126..207L}, and thermohaline mixing ($\alpha_{\mathrm{th}}=1$) \citep{1980A&A....91..175K}. To account for convective boundary overshooting above the core \citep{2000A&A...360..952H,2018ApJ...859..100C}, we use the exponentional model with free parameters $(f,f_0) = (4.25 \times 10^{-2}, 10^{-3})$, which broadly reproduces the width of the Main Sequence (MS) for a single $16 \, \Mdot$ star \citep{2011A&A...530A.115B}. We do not account for convective boundary over/undershooting for off-center convective layers. To aid in regions at the Eddington limit where convection is also inefficient, we utilize the local implicit enhancement of the convective flux in superadiabatic regions (\texttt{\red{use\_superad\_reduction = .true.}}) \citep{2023ApJS..265...15J}.
 
@@ -304,17 +308,17 @@ We start with creating an initial population of pre--SN binaries. We generate sa
 
 \subsection{Monte Carlo Results} \label{sec:monte_carlo}
 
-\red{
-\begin{enumerate}
-    \item Describe what we are doing in this section - Infer pre-SN parameters of XRB from observational constraints
-    \item Define relevant variables, initial population, assumptions (circular orbits) outcomes
-    \item Emphasize that population is not observationally motivated, so probabilities arent real. Meant to explore parameter space
-    \item Simulate outcomes of SN kicks - put observational constraints (define them)
-    \item Show corner plot - explain what it implies - Pre-SN period and mass constraints
-    \item Explain lower left corner gap in Pre-SN period - emphasize why kick is likely (based on MT period widening, Renzo+19), and kick needed to shrink
-    \item Explain black shaded area - unlikely to fit without RLOF, theoretcially not expected due to orbit widening, wind mass loss over kinematic age gives minimum period ~2d. In black is shown distribution for post-SN period >~2d
-\end{enumerate}
-}
+% \red{
+% \begin{enumerate}
+%     \item Describe what we are doing in this section - Infer pre-SN parameters of XRB from observational constraints
+%     \item Define relevant variables, initial population, assumptions (circular orbits) outcomes
+%     \item Emphasize that population is not observationally motivated, so probabilities arent real. Meant to explore parameter space
+%     \item Simulate outcomes of SN kicks - put observational constraints (define them)
+%     \item Show corner plot - explain what it implies - Pre-SN period and mass constraints
+%     \item Explain lower left corner gap in Pre-SN period - emphasize why kick is likely (based on MT period widening, Renzo+19), and kick needed to shrink
+%     \item Explain black shaded area - unlikely to fit without RLOF, theoretcially not expected due to orbit widening, wind mass loss over kinematic age gives minimum period ~2d. In black is shown distribution for post-SN period >~2d
+% \end{enumerate}
+% }
 
 We use the monte carlo simulations described in Section \ref{sec:methods} to infer the pre--SN properties of the runaway HMXB 4U1700-37/ HD 153919. We utilize several of its observational constraints such as the masses of the companion star and the compact object, the current orbital period, and its systemic velocity with respect to its parent cluster NGC 6231. \red{The mass of the progenitor star that will undergo a SN is denoted by $m_1$, while its companion has a mass $m_2$. We denote the pre--SN orbital period as $P_{\mathrm{pre-SN}}$.} We generate a population of $10^7$ binaries with $m_2$ sampled uniformly between $40-60\,\Mdot$. This roughly spans the estimated mass of the companion today, and we do not expect it to have significantly changed during the SN and the couple of $\mathrm{Myr}$ since then. We fix the post--SN mass of the compact object to be $2.5 \, \Mdot$, and sample the mass lost in the SN explosion ($\Delta m$) uniformly between $0-20 \, \Mdot$. This gives the pre--SN mass of the progenitor of the compact object as $m_1 = 2.5\, \Mdot + \Delta m$. We sample the pre--SN period of the binary uniformly between $0-30\, \mathrm{days}$. Although we allow for extremely short periods pre--SN, they are not realistic as the binaries are unlikely to fit inside a very small orbit. We sample the natal kicks to the compact object from a maxwellian distribution with a scale of $265 \, \mathrm{km/s}$. We have defined the pre--SN binary population ($m_1\,, m_2\,, P$) and the relevant parameters for the SN explosion ($\Delta m\,, v_{\mathrm{kick}}\,, \phi,\, \theta$) which allows us the compute the properties of the post--SN binary (or disrupted) population. From the post--SN population, we select for systems that are bound $e<1$ and have gained a systemic velocity between $50-80 \, \mathrm{km/s}$ \citep{2021A&A...655A..31V}. The present--day orbital period of the XRB is $3.41 \, \mathrm{days}$ \citep{2016MNRAS.461..816I}, but it is possible that the period immediately post--SN period was smaller and it has widened due to wind mass loss from the companion star since then. To account for this, we select for systems that have a post--SN orbital period between $2-3.41 \, \mathrm{days}$. We place a lower limit of $2 \, \mathrm{days}$, as smaller periods would imply that the companion star would have filled its Roche Lobe post--SN which does not seem plausible given the current evolutionary state of the star. 
 
@@ -331,17 +335,17 @@ This creates a very narrow range of pre--SN periods ($1.5-2.5$ days), where the 
 
 \subsection{MESA-Model-XRB}\label{sec:mesa_xrb}
 
-\red{
-\begin{enumerate}
-    \item Monte carlo constraints give us insight into past - conservative mass transfer (pre-SN mass), short period (pre-SN period)
-    \item Progenitor system - 40+30, 3d. Case A MT
-    \item Describe evolution, and also HR diagram. Focus on key phases - Fast+Slow Case A, Case AB, WR winds during helium burning, explosion, Accretor growth till TAMS
-    \item Compare with observed properties of the star
-    \item what do we get wrong (describe here or later in discussion)
-    \item Future of XRB - Binding energy curves, alpha common envelope, likely failure, TZO/transient
-    \item Perhaps discuss here i) why do we need a natal kick, why not a common envelope, why not Case B (or place this somewhere else if more appropriate)
-\end{enumerate}
-}
+% \red{
+% \begin{enumerate}
+%     \item Monte carlo constraints give us insight into past - conservative mass transfer (pre-SN mass), short period (pre-SN period)
+%     \item Progenitor system - 40+30, 3d. Case A MT
+%     \item Describe evolution, and also HR diagram. Focus on key phases - Fast+Slow Case A, Case AB, WR winds during helium burning, explosion, Accretor growth till TAMS
+%     \item Compare with observed properties of the star
+%     \item what do we get wrong (describe here or later in discussion)
+%     \item Future of XRB - Binding energy curves, alpha common envelope, likely failure, TZO/transient
+%     \item Perhaps discuss here i) why do we need a natal kick, why not a common envelope, why not Case B (or place this somewhere else if more appropriate)
+% \end{enumerate}
+% }
 
 \subsection{Results -- XRB}
 
@@ -393,18 +397,18 @@ GW190814 was an exceptional event that consisted of a merger between a 23Msun bl
 
 \subsection{MESA model - GW190814}
 
-\red{
-\begin{enumerate}
-    \item Based on "success" of XRB model, propose similar solution for GW190814
-    \item What will be different here? - Why is XRB a TZO - kick strength and direction
-    \item Why switch to lower masses - weaker winds
-    \item No observational constraints other than masses - more freedom
-    \item Describe fiducial GW model at Z/10 - key phases, HR diagram, final masses, donor explosion.
-    \item Describe possible futures
-    \item Evolve accretor as single star - next interaction depends on post-SN orbit. At smaller radii / lack of convective envelope / before RSG phase, binding energy high, merger likely. At larger radii, core envelope distincition, lower binding energy, CE ejection likely.
-    \item End state - large BH (implosion) + NS/low mass BH (after successful explosion + strong kick) - asymmetric mass ratio GW event
-\end{enumerate}
-}
+% \red{
+% \begin{enumerate}
+%     \item Based on "success" of XRB model, propose similar solution for GW190814
+%     \item What will be different here? - Why is XRB a TZO - kick strength and direction
+%     \item Why switch to lower masses - weaker winds
+%     \item No observational constraints other than masses - more freedom
+%     \item Describe fiducial GW model at Z/10 - key phases, HR diagram, final masses, donor explosion.
+%     \item Describe possible futures
+%     \item Evolve accretor as single star - next interaction depends on post-SN orbit. At smaller radii / lack of convective envelope / before RSG phase, binding energy high, merger likely. At larger radii, core envelope distincition, lower binding energy, CE ejection likely.
+%     \item End state - large BH (implosion) + NS/low mass BH (after successful explosion + strong kick) - asymmetric mass ratio GW event
+% \end{enumerate}
+% }
 
 A key difference for stars at lower metallicity is that the wind mass loss becomes signifcantly weaker. From our previous MESA models at solar metallicity, we saw that the mass loss during the "WR phase" (core--helium burning) is extremely important in getting the donor star's mass down to what we expect from our monte carlo simulations. Utilizing the same stellar masses and computing their binary evolution at lower metallicity would leave us with pre-SN donor stars with sufficiently high masses that would likely fail to explode. This motivates us to lower the initial masses of our stars while trying to model the progentior of a GW190814--like system at lower metallicity. For our fiducial GW190814--like model, we start with a binary of $30\,\Mdot+25\,\Mdot$ in a 3 day orbit. We show the evolution of this binary on the HR diagram in Fig. \ref{fig:gw_hr}. Qualitatively, it follows a similar pathway as our fiducial XRB model. As stars at lower metallicity are more compact, mass transfer begins slightly later in the evolution. After $5.1 \,\mathrm{Myr}$, the donor star overflows its roche lobe during the MS, initiating Case A mass transfer. This phase lasts around $1 \,\mathrm{Myr}$, after which the donor has reached TAMS and starts contracting, detaching itself from its RL. At this stage, the donor star has a mass of $19\,\Mdot$, while the accretor has grown to about $36\Mdot$. Due to the short orbital period, tidal effects keep the accretor below critical rotation, and mass transfer remains close to fully conservative. The donor soon re--expands once it starts hydrogen shell burning, and starts a second phase of Case AB mass transfer, similar to our fiducial XRB model. At the end of this phase, we are left with a a binary of $16.5\Mdot+38.3\Mdot$ in a tight $3.85d$ orbit. Around the same time, the donor contracts and ignites helium burning in its core, and the star has a mass of $14.4\Mdot$ at helium depletion, with a carbon-oxygen core mass of $12.3\Mdot$, and a $\rm C/O$ ratio of $0.36$, which is roughly similar to what we got for our fiducial XRB. On the other hand, the accretor, which is now the more massive star in this system has a mass of $38.5\Mdot$. Assuming that the donor star successfully explodes and leaves behind a NS or a low mass BH similar to $2.5\,\Mdot$, and the strength and direction of the natal kick, we can have a variety of outcomes. Large enough kicks can potentially disrupt the binary itself, while low kicks would just slightly widen the orbit. The now more massive star will continue growing as its burns hydrogen in its core, and begin a phase of reverse MT if it overflows its RL. The outcome of a phase of reverse RLOF onto a compact object sensitively depends on the evolutionary state of the star at that point. Due to the highly assymetric mass ratio, MT is likely going to be unstable and a CE phase is likely. If the star interacts while it is still on or just past its MS, its envelope binding energies are likely going to be sufficeintly high that it would meet the same fate as out fiducial XRB and form a transient/TZO. However, if the natal kick to the first born CO is large enough but not leading to disruption, the binary can be pushed into a wide orbit where the reverse MT starts much later in the evolution of the star. This is crucial for the successful ejection of a CE, as donor stars with large and loosely bound convective envelopes are easier to eject. The star will likely develop a loosely bound convective envelope once it has expanded sufficeintly and become cool enough to be a RSG. Interaction during the RSG phase significantly increases the possibility of a successful CE ejection, and we would be left behind with a tight binary, consisting of a helium core of about $20\Mdot$ and a $2.5\Mdot$ CO. Such a massive helium core is expected to implode and form a $20\Mdot$ BH without a natal kick. We are now left with a DCO system consisting of a $20\Mdot$ BH and a $2.5\Mdot$ CO, which would then merge after a GW driven inspiral. Such a system would appear to be similar in compact object masses to GW190814. 
 
