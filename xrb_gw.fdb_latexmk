@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex xrb_gw"] 1766189607.75692 "xrb_gw.aux" "xrb_gw.bbl" "xrb_gw" 1766432883.00852 0
+["bibtex xrb_gw"] 1766520053.45157 "xrb_gw.aux" "xrb_gw.bbl" "xrb_gw" 1766520054.69081 0
   "./aasjournalv7.bst" 1755047648.66759 38788 af6489f4b275f4b9c2f0b12c5ef4a113 ""
   "./xrb_gw.bib" 1766189587.68065 169732 6ad44a25fa9df8c8c25dc5b71ea7dde4 ""
-  "xrb_gw.aux" 1766432882.69142 41103 253ecbaa6cc265f90ea1ea9b7843cef1 "pdflatex"
+  "xrb_gw.aux" 1766520054.39178 42462 16daef26d4399906c0125b195655c640 "pdflatex"
   (generated)
   "xrb_gw.bbl"
   "xrb_gw.blg"
   (rewritten before read)
-["pdflatex"] 1766432881.77215 "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" "xrb_gw.pdf" "xrb_gw" 1766432883.00875 0
-  "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" 1766432881.45846 76583 6976d16835bbe4edb59bafbf45e0737f ""
+["pdflatex"] 1766520053.58973 "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" "xrb_gw.pdf" "xrb_gw" 1766520054.69102 0
+  "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" 1766520049.50701 76734 7fc51c690bde80f515e87fa144bbf234 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -61,12 +61,14 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1248133631 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1248133631 24420 52dbb8e8aa0069a1b987309557f8d303 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb" 1248133631 35660 fb24af7afbadb71801619f1415838111 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb" 1248133631 36310 f5ddc6715cc60deb16d9db5ded6a9391 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1248133631 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -136,10 +138,10 @@
   "xrb_alpha_ce.pdf" 1755124549.08871 134901 7306fbc7d4f9010b7f8de9a5b488db2f ""
   "xrb_be.pdf" 1755122910.53014 134666 233abe2b2b31d83543fb944c5ec1402a ""
   "xrb_fiducial_hr.pdf" 1757011586.69966 167473 7c22d695af2cf6a2e88ce38ac9f8d03a ""
-  "xrb_gw.aux" 1766432882.69142 41103 253ecbaa6cc265f90ea1ea9b7843cef1 "pdflatex"
-  "xrb_gw.bbl" 1766189607.93662 64715 2df675e938c3fe840f7272fbb78bef09 "bibtex xrb_gw"
-  "xrb_gw.out" 1766432882.69547 3803 2018fb41745c2cc215b1fed5825df8c2 "pdflatex"
-  "xrb_gw.tex" 1766432881.45846 76583 6976d16835bbe4edb59bafbf45e0737f ""
+  "xrb_gw.aux" 1766520054.39178 42462 16daef26d4399906c0125b195655c640 "pdflatex"
+  "xrb_gw.bbl" 1766520053.58699 67208 7cf56eabc970a4ae8df527685c1340aa "bibtex xrb_gw"
+  "xrb_gw.out" 1766520054.39531 4086 458ef235121f6f127b9246627ba64992 "pdflatex"
+  "xrb_gw.tex" 1766520049.50701 76734 7fc51c690bde80f515e87fa144bbf234 ""
   (generated)
   "xrb_gw.aux"
   "xrb_gw.log"
