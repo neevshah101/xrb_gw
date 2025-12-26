@@ -204,6 +204,11 @@ INPUT ./xrb_fiducial_hr.pdf
 INPUT ./xrb_fiducial_hr.pdf
 INPUT ./xrb_fiducial_hr.pdf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti9.tfm
+INPUT ./gw_fiducial_be_radius.pdf
+INPUT ./gw_fiducial_be_radius.pdf
+INPUT ./gw_fiducial_be_radius.pdf
+INPUT ./gw_fiducial_be_radius.pdf
+INPUT ./gw_fiducial_be_radius.pdf
 INPUT ./gw_fiducial_hr.pdf
 INPUT ./gw_fiducial_hr.pdf
 INPUT ./gw_fiducial_hr.pdf
