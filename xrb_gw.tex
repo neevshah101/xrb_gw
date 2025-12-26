@@ -350,11 +350,18 @@ Since we now compute binary evolution models at a lower metallicity, we also low
 
 \subsection{Evolution before first--SN}
 
-The top and bottom panels in Fig. \ref{fig:gw_hr} show the evolutionary tracks of the donor and accretor in the binary respectively, with the colors highlighting different phases of MT, as defined in Section \ref{sec:mesa-xrb-results}.
+The top and bottom panels in Fig. \ref{fig:gw_hr_accretor} show the evolutionary tracks of the donor and accretor in the binary respectively, with the colors highlighting different phases of MT, as defined in Section \ref{sec:mesa-xrb-results}.
 
 As stars at lower metallicity are more compact, mass transfer begins slightly later in the evolution. After $5.9 \,\mathrm{Myr}$, the donor star overflows its Roche--Lobe during the MS, initiating Case A mass transfer. This phase lasts for around $0.75 \,\mathrm{Myr}$. Once the donor reaches TAMS, it starts contracting, and detaches itself from its RL. At this stage, the donor star has a mass of $16.9\,\Mdot$, while the accretor has grown to about $34.9\,\Mdot$. Due to the short orbital period, the strong tidal forces prevent the accretor from reaching critical rotation, and mass transfer remains close to fully conservative. The donor soon re--expands once it starts hydrogen shell burning, and starts the second phase of Case AB mass transfer, similar to our fiducial model in Section \ref{sec:mesa-xrb-results}. At the end of this phase, the binary consists of a $14.4\,\Mdot$ donor, and a $37.4\,\Mdot$ accretor in a tight $6.4\,\mathrm{day}$ orbit. Around the same time, the donor contracts and ignites helium in its core, which lasts for $\sim 0.5 \, \rm Myr$. At core--helium depletion, the donor is left with a mass of $12.7\,\Mdot$, with a carbon-oxygen core mass of $10.7\,\Mdot$ (and a central $\rm ^{12}C/^{16}O \sim 0.39$). On the other hand, the accretor, which is now the more massive star in this system has a mass of $37.3\,\Mdot$. 
 
 We assume that in some cases, the donor star successfully explodes at the end of its life, and leaves behind a NS, or a low mass BH due to fallback or accretion during the SN. This may resemble the $2.6\,\Mdot$ secondary in GW190814. The compact object may also receive a natal kick at birth. Depending on its strength and direction, a plethora of post--SN outcomes are possible. This is unlike the Galactic HMXB 4U 1700-37, for which we had observational constraints on the post--SN orbit. \red{See discussion for more details on explodability}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{gw_hr_accretor.pdf}
+    \caption{The evolution of the accretor star on the HR diagram. The blue curve highlights Case A mass transfer, while the red curve is for Case AB. The diamond, plus, and star markers correspond to the TAMS, core--helium ignition, and core--helium depletion respectively. The inset panel zooms into the late stages of the core--helium burning phase, where it ascends the RSG branch, and developes a convective envelope (shown in purple)}
+    \label{fig:gw_hr_accretor}
+\end{figure}
 
 \subsection{Evolution after first--SN}
 
@@ -373,7 +380,7 @@ However, for $R_* > 1250\,\Rdot$, we find that the minimum $\alpha_{\text{CE}}$ 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{gw_fiducial_be_radius.pdf}
-    \caption{\red{TBA}}
+    \caption{The top panel shows the evolution of the effective binding energy of the envelope as a function of the total radius of the star. The blue curves include the contribution of internal energy, while the golden curves only include the gravitational binding energy. The solid lines correspond to the $X = 0.1$ definition for the core--envelope boundary, while the shaded bands encompass the $X = 0.01$ and $X = 0.3$ limits. The vertical dash--dot lines denote the radius of the star when it reaches TAMS, when it ignites helium in its core (He ZAMS), and when it finishes core--helium burning (He TAMS). The bottom panel shows the minimum $\alpha_{\text{CE}}$ required to eject the envelope as a function of the stellar radius, with the same color and shading conventions as the top panel.}
     \label{fig:gw_be}
 \end{figure}
 
@@ -381,26 +388,19 @@ However, for $R_* > 1250\,\Rdot$, we find that the minimum $\alpha_{\text{CE}}$ 
 
 In our \texttt{MESA} models, we find that for the systems that survive the CE phase, their remnant cores just have $\approx 0.03\,\mathrm{Myr}$ left to the end of core--helium burning, and have a helium core mass of $\approx 20\,\Mdot$. At core--collapse, such a heavy core is potentially too large to explode. It will likely implode on itself, and leave behind a $\approx 20\,\Mdot$ BH. These systems now consists of a NS or a low--mass BH with a massive $\approx 20\,\Mdot$ BH companion in a tight orbit. For an $\alpha_{\mathrm{CE}} = 1$, we find that the post--CE orbital separation is $\approx 20\,\Rdot$ The subsequent evolution of this system will be dominated by a GW--driven inspiral, and after $\approx 80\,\mathrm{Myr}$ would end in their finale as a compact binary coalescence that may be observed by the LVK detectors. These signals would consist of a low mass compact object that may be a NS or BH, with a massive BH companion, that would appear similar to the highly asymmetric mass ratio event GW190814.
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{gw_fiducial_hr.pdf}
-    \caption{\red{TBA}}
-    \label{fig:gw_hr}
-\end{figure}
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{xrb_be.pdf}
+%     \caption{\red{TBA}}
+%     \label{fig:xrb_be}
+% \end{figure}
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{xrb_be.pdf}
-    \caption{\red{TBA}}
-    \label{fig:xrb_be}
-\end{figure}
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{xrb_alpha_ce.pdf}
-    \caption{\red{TBA}}
-    \label{fig:xrb_alpha_ce}
-\end{figure}
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{xrb_alpha_ce.pdf}
+%     \caption{\red{TBA}}
+%     \label{fig:xrb_alpha_ce}
+% \end{figure}
 
  \section{Rates of GW190814--like events}
 
