@@ -112,6 +112,16 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/ulem/ulem.sty
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/lineno/lineno.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/lineno/lineno.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT ./xrb_gw.aux
@@ -190,6 +200,7 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT ./xrb-monte-carlo-mass-period-kick.pdf
 INPUT ./xrb-monte-carlo-mass-period-kick.pdf
@@ -197,7 +208,6 @@ INPUT ./xrb-monte-carlo-mass-period-kick.pdf
 INPUT ./xrb-monte-carlo-mass-period-kick.pdf
 INPUT ./xrb-monte-carlo-mass-period-kick.pdf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT ./xrb_fiducial_hr.pdf
 INPUT ./xrb_fiducial_hr.pdf
 INPUT ./xrb_fiducial_hr.pdf
@@ -219,6 +229,8 @@ INPUT ./gw-post-SN-rl.pdf
 INPUT ./gw-post-SN-rl.pdf
 INPUT ./gw-post-SN-rl.pdf
 INPUT ./gw-post-SN-rl.pdf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT ./xrb_hr_resolution_test.pdf
 INPUT ./xrb_hr_resolution_test.pdf
 INPUT ./xrb_hr_resolution_test.pdf

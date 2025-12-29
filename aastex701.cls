@@ -13791,6 +13791,7 @@ by-18pt\relax#1}}
 \fi
 
 %% Use when line numbers are on, and after \usepackage{amsmath}.
+\usepackage{amsmath}
 %% Will make line numbering work on math as it would without amsmath.
 \def\fixmathlinenumbering{
 \let\saveopensqbracket\[
