@@ -214,6 +214,11 @@ INPUT ./gw_fiducial_be_radius.pdf
 INPUT ./gw_fiducial_be_radius.pdf
 INPUT ./gw_fiducial_be_radius.pdf
 INPUT ./gw_fiducial_be_radius.pdf
+INPUT ./gw-post-SN-rl.pdf
+INPUT ./gw-post-SN-rl.pdf
+INPUT ./gw-post-SN-rl.pdf
+INPUT ./gw-post-SN-rl.pdf
+INPUT ./gw-post-SN-rl.pdf
 INPUT ./xrb_hr_resolution_test.pdf
 INPUT ./xrb_hr_resolution_test.pdf
 INPUT ./xrb_hr_resolution_test.pdf
@@ -252,6 +257,7 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb
