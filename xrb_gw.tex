@@ -263,25 +263,81 @@ We find that the pre--SN mass of the progenitor of the compact object must have 
 We utilize the pre-SN constraints that we obtained from our monte carlo simulations to reconstruct the past evolutionary history of the HMXB 4U-1700-37/ HD 153919, with detailed binary evolution models, and describe our setup below.
 
 We simulate the evolution of massive binaries using the \mr{stellar
-evolution code} \textsc{MESA}} \citep[][\texttt{r24.08.01}]{2011ApJS..192....3P,2013ApJS..208....4P,2015ApJS..220...15P,2018ApJS..234...34P,2019ApJS..243...10P,2023ApJS..265...15J}. Our inlists and choice of input parameters are public (\red{link zenodo/github}) and we mention some of the relevant parameters and assumptions below.
+evolution code} \textsc{MESA}
+\citep[][\texttt{r24.08.01}]{2011ApJS..192....3P,2013ApJS..208....4P,2015ApJS..220...15P,2018ApJS..234...34P,2019ApJS..243...10P,2023ApJS..265...15J}. Our inlists and choice of input parameters are public (\red{link zenodo/github}) and we \mr{summarize\sout{mention some of the}} relevant parameters and assumptions below.
 
-We use the Ledoux criterion \citep{1947ApJ...105..305L} to find convective zones, and assume a mixing length parameter $\alpha_{\mathrm{MLT}}=2.0$. We also include semiconvection ($\alpha_{\mathrm{sc}}=1$) \citep{1983A&A...126..207L}, and thermohaline mixing ($\alpha_{\mathrm{th}}=1$) \citep{1980A&A....91..175K}. To account for convective boundary overshooting above the core \citep{2000A&A...360..952H,2018ApJ...859..100C}, we use the exponential model with free parameters $(f,f_0) = (4.25 \times 10^{-2}, 10^{-3})$, which broadly reproduces the width of the Main Sequence (MS) for a single $16 \, \Mdot$ star \citep{2011A&A...530A.115B}. We do not account for convective boundary over/undershooting for off-center convective layers. To aid in regions at the Eddington limit where convection is inefficient, we utilize the local implicit enhancement of the convective flux in superadiabatic regions \citep{2023ApJS..265...15J}.
+We use the Ledoux criterion \citep{1947ApJ...105..305L} to find
+convective zones, and assume a mixing length parameter
+$\alpha_{\mathrm{MLT}}=2.0$. We also include semiconvection
+($\alpha_{\mathrm{sc}}=1$) \citep{1983A&A...126..207L}, and
+thermohaline mixing ($\alpha_{\mathrm{th}}=1$)
+\citep{1980A&A....91..175K}. To account for convective boundary overshooting above the core, we use the exponential model with free parameters $(f,f_0) = (4.25 \times 10^{-2}, 10^{-3})$ \citep{2000A&A...360..952H,2018ApJ...859..100C}, which broadly reproduces the width of the Main Sequence (MS) for a single $16 \, \Mdot$ star \citep{2011A&A...530A.115B}. We do not account for convective boundary over/undershooting for off-center convective layers. To aid in regions at the Eddington limit where convection is inefficient, we utilize the local implicit enhancement of the convective flux in superadiabatic regions \citep[\texttt{use\_superad\_reduction} from][]{2023ApJS..265...15J}.
 
-To limit the computational difficulties in modeling massive interacting binaries, we include rotation only in the accretor, while we fix the donor to be non--rotating. The accreted material carries angular momentum which can spin--up the star, and this is observed in accretor stars \citep{1993ASPC...35..207B} such as $\zeta\, \mathrm{Ophiuchi}$ \citep{2018AN....339...46Z, 2021ApJ...923..277R}, a fraction of runaways (citation required), in Be stars \citep{2026enap....2..430R} and blue lurkers or stragglers \citep{2019ApJ...881...47L}. We treat rotation in the "shellular" approximation \citep{1992A&A...265..115Z,2012A&A...537A.146E}, where the angular velocities $\omega$ are constant on isobaric surfaces, effectively assuming strong angular momentum transport in the horizontal direction due to turbulence. We start our accretor models with a $\Omega/\Omega_{\mathrm{crit}} = 0$ at Zero--Age Main Sequence (ZAMS), but tidal effects tend to synchronize the star with the orbital period. We include several rotational mixing processes in a diffusion approximation, such as Eddington--Sweet circulation \citep{1950MNRAS.110..548S}, secular and dynamic shear instabilities, and the Goldreich-Schubert-Fricke (GSF) instability (see \cite{2000ApJ...528..368H} for a review of these processes). We assume a Spruit--Taylor dynamo \citep{2002A&A...381..923S} for treating the transport of angular momentum, and choose the same parameters as in \citep{2000ApJ...528..368H}. We also include the rotational enhancement of the wind mass loss \citep{1998A&A...329..551L} to keep the star to rotate sub--critically.
+To limit the computational difficulties in modeling massive
+interacting binaries, we include rotation only in the accretor, while
+we fix the donor to be non--rotating. The accreted material carries
+angular momentum which can spin--up the star, and this is observed in
+accretor stars, \mr{for example}, a fraction of runaways
+\citep{1993ASPC...35..207B} such as $\zeta\, \mathrm{Ophiuchi}$
+\citep{2018AN....339...46Z, 2021ApJ...923..277R}, in Be stars
+\citep{2026enap....2..430R} and blue lurkers or stragglers
+\citep{2019ApJ...881...47L}. We treat rotation in the ``shellular''
+approximation \citep{1992A&A...265..115Z,2012A&A...537A.146E}, where
+the angular velocities $\omega$ are constant on isobaric surfaces,
+effectively assuming strong angular momentum transport in the
+horizontal direction due to turbulence. We start our accretor models
+with a $\Omega/\Omega_{\mathrm{crit}} = 0$ at Zero--Age Main Sequence
+(ZAMS), but tidal effects tend to \red{[tend to or do they? Say what
+happens in your models (possibly quoting the timescale for sync)]}
+synchronize the star with the orbital period. We include several
+rotational mixing processes in a diffusion approximation, such as
+Eddington--Sweet circulation \citep{1950MNRAS.110..548S}, secular and
+dynamic shear instabilities, and the Goldreich-Schubert-Fricke (GSF)
+instability (see \cite{2000ApJ...528..368H} for a review of these
+processes). We assume a Spruit--Taylor dynamo
+\citep{2002A&A...381..923S} for treating the transport of angular
+momentum, and choose the same parameters as in
+\citep{2000ApJ...528..368H}. We also include the rotational
+enhancement of the wind mass loss \citep{1998A&A...329..551L} to
+\mr{prevent super-critical spin-up of the accretor and regulate the
+mass-transfer efficiency \cite[see below and also][]{2025arXiv251115347S}}.
 
-For stars with a surface effective temperature $\mathrm{T_{eff}} > 11000\,\mathrm{K}$, we utilize the mass loss prescriptions from \citep{2023A&A...676A.109B}, unless the surface hydrogen mass fraction falls below $0.4$, in which case we use the optically thick Wolf--Rayet (WR) wind mass loss rates from \citep{2000A&A...360..227N}. For cooler stars with a $\mathrm{T_{eff}} < 10000\,\mathrm{K}$, we use the mass--loss rates from \citep{2024A&A...681A..17D}, and interpolate linearly between the hot and cool winds for the temperature ranges $10000-11000\,\mathrm{K}$ \red{Mention about the condition used for massive RSG}.
+For stars with a surface effective temperature $T_\mathrm{{eff}} > 11000\,\mathrm{K}$, we utilize the mass loss prescriptions from \citep{2023A&A...676A.109B}, unless the surface hydrogen mass fraction falls below $0.4$, in which case we use the optically thick Wolf--Rayet (WR) wind mass loss rates from \citep{2000A&A...360..227N}. For cooler stars with a $\mathrm{T_{eff}} < 10000\,\mathrm{K}$, we use the mass--loss rates from \citep{2024A&A...681A..17D}, and interpolate linearly between the hot and cool winds for the temperature ranges $10000-11000\,\mathrm{K}$ \red{Mention about the condition used for massive RSG}.
 
-We treat mass transfer in a binary using an implicit scheme described in \citep{1990A&A...236..385K}. We assume that mass transfer is fully conservative until the accretor reaches a maximum $\Omega/\Omega_{\mathrm{crit}} = 0.9$, after which the mass--transfer efficiency depends on the rotationally enhanced wind mass loss. We assume that the specific angular momentum and entropy of the transferred mass is equal to the corresponding values at the surface of the accretor, and the chemical composition is set by the stratification of the donor. The transferred mass that is not accreted leaves the binary system carrying with it the specific angular momentum of the orbital motion of the accretor \citep{1997A&A...327..620S,2017MNRAS.471.4256V}. We also include tidal effects \citep{1977A&A....57..383Z, 1981A&A....99..126H,2002MNRAS.329..897H}, which can have a significant impact on the evolution of close binaries.
+We treat mass transfer in a binary using an implicit scheme described
+in \citep{1990A&A...236..385K}. We assume that mass transfer is fully
+conservative until the accretor reaches a maximum
+$\Omega/\Omega_{\mathrm{crit}} = 0.9$, after which the mass--transfer
+efficiency depends on the rotationally enhanced wind mass loss. We
+assume that the specific angular momentum and entropy of the
+transferred mass is equal to the corresponding values at the surface
+of the accretor, and the chemical composition is set by the
+stratification of the donor. The transferred mass that is not accreted
+leaves the binary system carrying with it the specific angular
+momentum of the orbital motion of the accretor
+\citep{1997A&A...327..620S,2017MNRAS.471.4256V}. \red{[are we going to
+discuss parameter variations of these? If so, maybe announce in Sec. X
+(or Appendix Y) we discuss variations of these parameters]} We also
+include tidal effects \citep{1977A&A....57..383Z,
+1981A&A....99..126H,2002MNRAS.329..897H}, which can have a significant
+impact on the \mr{spins and orbital} evolution of close binaries.
 
 \subsection{Results}\label{sec:mesa-xrb-results}
 
 %Based on the monte carlo results described in Section \ref{sec:monte_carlo}, we know that the pre--SN mass of the progenitor of the compact object was less than $13\,\Mdot$ and the pre--SN period was less than $9\, \mathrm{days}$. We utilize these constraints to reconstruct the past evolutionary history of the HMXB 4U-1700-37/ HD 153919. We compute binary evolution models with \textsc{MESA}, starting from two stars at ZAMS and evolving them all the way till the initially more massive star (donor) completes helium burning. Afterwards, we detach the binary \red{following \citep{2023ApJ...942L..32R}}, and continue evolving the originally less massive star (accretor) till it finishes hydrogen burning in its core (TAMS).
 
-\red{To illustrate the evolution and structure of our binary models, we focus our presentation on a fiducial model that can potentially explain the past evolutionary history of the HMXB 4U 1700-37.} This corresponds to a binary of initial masses $40\,\Mdot$ and $28\,\Mdot$ in a tight orbit with a period of $3\,\mathrm{days}$. In Fig. \ref{fig:xrb_fiducial_hr}, we show the evolution of the donor and accretor on the HR diagram. Due to the short initial period, the donor overflows its roche lobe after $3.26\,\mathrm{Myr}$, during the Main Sequence (MS) itself. This leads to a phase of mass transfer from the donor to the accretor, referred to as Case A \citep{1967ZA.....65..251K}. This consists of an initial thermal timescale mass transfer ($\sim 0.07\, \mathrm{Myr}$), known as fast Case A (highlighted in blue in Fig. \ref{fig:xrb_fiducial_hr}), where the donor loses a majority of the mass lost during RLOF. As the donor regains thermal equilibrium, it slowly grows in size on a nuclear timescale, which leads to a steady period of mass transfer referred to as slow Case A (highlighted in red in Fig. \ref{fig:xrb_fiducial_hr}). This phase ends around $\sim 5\,\mathrm{Myr}$, which roughly corresponds to when the donor has finished its supply of hydrogen in its core. It starts contracting on a thermal timescale, ending RLOF. At this stage, the donor has lost around $\sim 18\,\Mdot$, \red{with $\sim 7\,\Mdot$ lost during the thermal timescale fast Case A phase}. It now has a mass of $\sim 21.9\,\Mdot$. Due to the stripping of its envelope during MT, the surface has has an elevated helium abundance ($Y = 0.67$) and a hot surface with a $T_{\mathrm{eff}} \sim 42500\,\mathrm{K}$. The mass of the helium core at this point is almost $17.2\,\Mdot$.
+To illustrate the evolution and structure of our binary models,
+we focus our presentation on a fiducial model that can potentially
+explain the past evolutionary history of the HMXB 4U 1700-37. This
+corresponds to a binary of initial masses $40\,\Mdot$ and $28\,\Mdot$
+in a tight orbit with a period of $3\,\mathrm{days}$ \red{[these
+numbers here come out of the blue, can we briefly mention the
+exploratory work that gives these? This is where showing the grid
+could make sense]}. In Fig. \ref{fig:xrb_fiducial_hr}, we show the evolution of the donor and accretor on the HR diagram. Due to the short initial period, the donor overflows its roche lobe after $3.26\,\mathrm{Myr}$, during the Main Sequence (MS) itself. This leads to a phase of mass transfer from the donor to the accretor, referred to as Case A \citep{1967ZA.....65..251K}. This consists of an initial thermal timescale mass transfer ($\sim 0.07\, \mathrm{Myr}$), known as fast Case A (highlighted in blue in Fig. \ref{fig:xrb_fiducial_hr}), where the donor loses a majority of the mass lost during RLOF. As the donor regains thermal equilibrium, it slowly grows in size on a nuclear timescale, which leads to a steady period of mass transfer referred to as slow Case A (highlighted in red in Fig. \ref{fig:xrb_fiducial_hr}). This phase ends around $\sim 5\,\mathrm{Myr}$, which roughly corresponds to when the donor has finished its supply of hydrogen in its core. It starts contracting on a thermal timescale, ending RLOF. At this stage, the donor has lost around $\sim 18\,\Mdot$, \red{with $\sim 7\,\Mdot$ lost during the thermal timescale fast Case A phase}. It now has a mass of $\sim 21.9\,\Mdot$. Due to the stripping of its envelope during MT, the surface has has an elevated helium abundance ($Y = 0.67$) and a hot surface with a $T_{\mathrm{eff}} \sim 42500\,\mathrm{K}$. The mass of the helium core at this point is almost $17.2\,\Mdot$.
 
 On the other hand, the accretor (still on the MS) has grown from an initial $28\,\Mdot$ to $\approx 40.9\,\Mdot$. Due to the increase in mass, it is now overluminous with a $\mathrm{log_{10}}(\mathrm{L}/\Ldot) \approx 5.6$ and a surface temperature of $39400\,\mathrm{K}$ \red{(the end of the highlighted red phase in the bottom panel of Fig. \ref{fig:xrb_fiducial_hr})}.
 
-The orbital period of the binary only widened from an initial period of $3\,\mathrm{days}$ to $\sim 3.68\,\mathrm{days}$ post--MT. \red{The donor star, which still has a thin hydrogen envelope of $\sim 4.7\,\Mdot$, rapidly expands on a thermal timescale during hydrogen shelll burning \citep{2017A&A...608A..11G},} and once again overflows its Roche Lobe. As this occurs after the initial Case A mass transfer, this phase is referred to as Case AB (with the B referencing mass transfer occuring after the MS but before helium depletion \cite{1967ZA.....65..251K}). This phase is highlighted in green in Fig. \ref{fig:xrb_fiducial_hr}. The donor loses an additional $\sim 3.5\,\Mdot$, bringing its total mass down to $18.4\,\Mdot$. Tides prevent the accretor from reaching critical rotation, and it is again able to accrete most of the transferred mass, growing to $\sim 43.9\,\Mdot$. This phase ends just after $\approx 10000\, \mathrm{yr}$.  The donor, now even more stripped of hydrogen (surface $X \sim 0.18$), starts contracting towards higher surface temperatures. Around the same time, it ignites helium in its center, and the core helium burning phase lasts for $\approx 0.44\,\mathrm{Myr}$. During this phase, it has a hot helium rich surface, and would resemble a Wolf--Rayet (WR)\footnote{Note that while WR is a spectroscopic class, we do not compute synthetic spectra. In our stellar evolution models, we switch to WR wind mass loss rates based on the surface temperature and helium abundance, as defined in Section \ref{sec:mesa_xrb-methods}.} star with a strong optically thick wind. These mass loss rates are of the order of $10^{-5} - 10^{-6} \,\Mdot/\rm yr$, and the donor star loses an additional $\sim 5.9\,\Mdot$ during the WR phase until helium depletion. At this point, it is just a few thousand years away from core--collapse \citep{1978ApJ...225.1021W}, and we terminate its evolution in \textsc{MESA}. It has a mass of $\sim 12.5\,\Mdot$, with a Carbon--Oxygen (CO) core mass of $\sim 10.6\,\Mdot$ (and a central $\rm ^{12}C/^{16}O \sim 0.38$). There is no hydrogen left on the surface, which mostly consists of helium, carbon and some oxygen. Meanwhile, the originally less massive star (representing the current visible star in the XRB) has a mass of $43.4\,\Mdot$. The orbital period of the binary has increased to $\sim 6.00\,\mathrm{days}$, primarily due to the orbital widening caused by wind mass loss \citep{2000A&A...360..227N}. Both the pre--SN mass of the progenitor of the compact object, the mass of the visible star, and the pre--SN orbital period roughly align with the observations of the XRB, and our expectations of its pre--SN properties from our monte carlo simulations in Section \ref{sec:monte-carlo-results}. At the end of the donor star's life, it may successfully explode and leave behind a $2 \, \Mdot$ compact object, and once the accretor grows large enough that it is close to filling its Roche Lobe, the system would resemble the HMXB 4U 1700-37 that we observe today. Due to previous mass accetion, we find that the surface of the companion star would appear to be enriched in helium and CNO--processed nitrogen, with surface abundances of $\approx 0.42$ and $\approx 0.004$ respectively. In Sections \ref{age}, \ref{vrot}, and \ref{caseA}, we discuss certain discrepancies that we find between our fiducial model and the estimated kinematic age of the HMXB, and the surface rotational velocity of the companion star HD 153919. We also provide further justification for why this system likely underwent Case A MT in the past.
+The orbital period of the binary only widened from an initial period of $3\,\mathrm{days}$ to $\sim 3.68\,\mathrm{days}$ post--MT. \red{The donor star, which still has a thin hydrogen envelope of $\sim 4.7\,\Mdot$, rapidly expands on a thermal timescale during hydrogen shelll burning \citep{2017A&A...608A..11G},} and once again overflows its Roche Lobe. As this occurs after the initial Case A mass transfer, this phase is referred to as Case AB (with the B referencing mass transfer occuring after the MS but before helium depletion \cite{1967ZA.....65..251K}). This phase is highlighted in green in Fig. \ref{fig:xrb_fiducial_hr}. The donor loses an additional $\sim 3.5\,\Mdot$, bringing its total mass down to $18.4\,\Mdot$. Tides prevent the accretor from reaching critical rotation, and it is again able to accrete most of the transferred mass, growing to $\sim 43.9\,\Mdot$. This phase ends just after $\approx 10000\, \mathrm{yr}$.  The donor, now even more stripped of hydrogen (surface $X \sim 0.18$), starts contracting towards higher surface temperatures. Around the same time, it ignites helium in its center, and the core helium burning phase lasts for $\approx 0.44\,\mathrm{Myr}$. During this phase, it has a hot helium rich surface, and would resemble a Wolf--Rayet (WR)\footnote{Note that while WR is a spectroscopic class, we do not compute synthetic spectra. In our stellar evolution models, we switch to WR wind mass loss rates based on the surface temperature and helium abundance, as defined in Section \ref{sec:mesa_xrb-methods}.} star with a strong optically thick wind. These mass loss rates are of the order of $10^{-5} - 10^{-6} \,\Mdot/\rm yr$, and the donor star loses an additional $\sim 5.9\,\Mdot$ during the WR phase until helium depletion. At this point, it is just a few thousand years away from core--collapse \citep{1978ApJ...225.1021W}, and we terminate its evolution in \textsc{MESA}. It has a mass of $\sim 12.5\,\Mdot$, with a Carbon--Oxygen (CO) core mass of $\sim 10.6\,\Mdot$ and a central $\rm ^{12}C/^{16}O \sim 0.38$. There is no hydrogen left on the surface, which mostly consists of helium, carbon and some oxygen. Meanwhile, the originally less massive star (representing the current visible star in the XRB) has a mass of $43.4\,\Mdot$. The orbital period of the binary has increased to $\sim 6.00\,\mathrm{days}$, primarily due to the orbital widening caused by wind mass loss \citep{2000A&A...360..227N}. Both the pre--SN mass of the progenitor of the compact object, the mass of the visible star, and the pre--SN orbital period roughly align with the observations of the XRB, and our expectations of its pre--SN properties from our monte carlo simulations in Section \ref{sec:monte-carlo-results}. At the end of the donor star's life, it may successfully explode and leave behind a $2 \, \Mdot$ compact object, and once the accretor grows large enough that it is close to filling its Roche Lobe, the system would resemble the HMXB 4U 1700-37 that we observe today. Due to previous mass accetion, we find that the surface of the companion star would appear to be enriched in helium and CNO--processed nitrogen, with surface abundances of $\approx 0.42$ and $\approx 0.004$ respectively. In Sections \ref{age}, \ref{vrot}, and \ref{caseA}, we discuss certain discrepancies that we find between our fiducial model and the estimated kinematic age of the HMXB, and the surface rotational velocity of the companion star HD 153919. We also provide further justification for why this system likely underwent Case A MT in the past.
 
 \begin{figure}[htbp]
     \centering
@@ -294,13 +350,19 @@ The orbital period of the binary only widened from an initial period of $3\,\mat
 
 Once the companion star in the HMXB 4U 1700-37 fills its Roche Lobe, it will start transferring mass onto the compact object. However, given the highly asymmetric mass ratio of the system ($q \approx 1/20$), this is likely to become unstable, and lead to a Common Envelope (CE) phase.
 
-\red{We assume mass transfer to become unstable if the mass transfer rate exceeds $0.1 \, \Mdot/\mathrm{yr}$. Such systems are expected to undergo a Common Envelope (CE) phase.} We do not attempt to model the CE phase directly with \textsc{MESA}, and instead utilize the $\alpha \lambda$ formalism to study its potential outcome. This depends on the binding energy of the envelope of the star filling its Roche Lobe, as well as the energy sources such as the orbital energy that can be used to unbind the envelope. The effective energy of the envelope, $E_{\text{env}}$, depends on the density structure and internal energy of the star, and is given by --
+\red{We assume mass transfer to become unstable if the mass transfer
+rate exceeds $0.1 \, \Mdot/\mathrm{yr}$
+\citep[e.g.,][]{Fragos23_posydon}. Such systems are expected to
+undergo a Common Envelope (CE) phase.} We do not attempt to model the CE phase directly with \textsc{MESA}, and instead utilize the $\alpha \lambda$ formalism \citep{webbink:84,1990ApJ...358..189D} to study its potential outcome. This depends on the binding energy of the envelope of the star filling its Roche Lobe, as well as the energy sources such as the orbital energy that can be used to unbind the envelope. The effective energy of the envelope, $E_{\text{env}}$, depends on the density structure and internal energy of the star, and is given by --
 
-\begin{equation}
+\begin{equation}\label{eq:BE_def}
     E_{\text{env}}(m) = \int_m^M \text{d}m' \left(-\frac{\text{G}m'}{r(m')} + \alpha_{\text{th}}u(m')\right)
 \end{equation}
 
-Here, $m$ refers to the mass coordinate corresponding to the core--envelope boundary, and $M$ is the total mass of the star. The first term in the integral refers to the gravitational potential energy of the mass shell. In the second term, $u$ refers to the available internal energy%footnote{This includes recombination energy as well, which we find is only significant in the outer cooler layers of the star, and does not contribute significantly in the integral, which is dominated by mass shells near the core--envelope boundary.}
+Here, $m$ refers to the mass coordinate corresponding to the
+core--envelope boundary, and $M$ is the total mass of the star. The
+first term in the integral refers to the gravitational potential
+energy of the mass shell \mr{at coordinate $m'$}. In the second term, $u$ refers to the available internal energy%footnote{This includes recombination energy as well, which we find is only significant in the outer cooler layers of the star, and does not contribute significantly in the integral, which is dominated by mass shells near the core--envelope boundary.}
 , and $\alpha_{\text{th}}$ is the fraction of internal energy that can be used to unbind the envelope. If such sources are indeed available to eject the envelope, it reduces the gravitational binding energy and we refer to their sum as the effective energy of the envelope.
 
 The core--envelope boundary is not well defined, and is sensitive to overshooting and other mixing processes in single stars \citep{2020cee..book.....I}. In binaries, rejuvenation can also play an important role in determining the boundary location \citep{2023ApJ...942L..32R}. To account for these uncertainties, we use three different definitions for determining its location, following \citep{2023ApJS..264...45F}. We define the core--envelope boundary as the outermost mass coordinate ($m = M_{\text{core}}$) where the hydrogen mass fraction $X$ is less than $0.01,0.1,0.3$ respectively. The effective envelope energy is often re-parameterized %to make it dimensionless
@@ -325,19 +387,55 @@ We can then quantify the outcome of a CE phase using energy conservation. This i
     \label{eq:ce_energy_terms}
 \end{equation}
 
+\mr{general comment here: I think you don't need to re-explain the
+common envelope formalism, you just need to define the symbols and
+define your success/failure criterion, following text should be
+shortened -- it's not a review on CE!}
+
 where $\alpha_{\text{CE}}$ refers to the fraction of orbital energy that can be used to unbind the envelope, $M_{\mathrm{CO}}$ refers to the mass of the compact object, $a_i$ and $a_f$ refer to the orbital separations before and after the CE phase respectively, and $E_{\mathrm{bind}} = |E_{\mathrm{env}}|$ refers to the effective binding energy of the envelope.
 
 We consider a common envelope phase to be successful if the post--CE orbital separation $a_f$ is large enough such that the remnant core of the star that loses its envelope $R_{\text{core}} \equiv R(m = M_{\text{core}})$ fits inside its Roche--Lobe. This can be rephrased as the minimum $\alpha_{\text{CE}}$ needed for the remnant core to just fill its RL post--CE. If the required $\alpha_{\text{CE}}$ is less than 1, we define the CE phase to be successful, while for values greater than 1, we assume that there is a premature merger between the compact object and the companion's core before the envelope can be ejected. We also do not consider any potential response of the remnant core to the CE phase, and assume that $R_{\text{core}}$ does not change. We also ignore other potential energy sources, such as the energy released by accretion onto the compact object, and energy losses via radiation etc.
 
-To evaluate the outcome of the CE phase, we use our treatment of CE evolution described above. We save the stellar structure of the companion star at the onset of RLOF, and compute the binding energy of its envelope at that instant. The star is still on the MS at that instant and has a central hydrogen mass fraction of $\approx 0.22$. As a result, we cannot use the $X=0.01$ or $X=0.1$ definitions for defining the core--envelope boundary. Using the $X=0.3$ definition, we get the core--envelope boundary to be located at $\approx 28.6\,\Mdot$, which roughly lies at the boundary of the convective MS core of the star. Using this boundary location, and the most optimistic assumption that all of the internal energy in the envelope is available, we get the effective binding energy of the envelope to be $\approx 2.35\times 10^{50}\,\mathrm{erg}$. This corresponds to a $\lambda \approx 0.5$. Using the energy balance Eqn. \ref{eq:ce_energy_balance}, we find that the minimum $\alpha_{\mathrm{CE}}$ that would be required to eject the common envelope, and have the remnant core fit inside its roche lobe is $\approx 18$. Such a large $\alpha_{\mathrm{CE}}$ implies that the CE phase is likely going to fail to eject the envelope, and lead to a premature merger between the star and the compact object. Although such systems are not GW sources, they could appear as [exotic transients, TZO,...what else? citations needed]
+To evaluate the outcome of the CE phase, we use our treatment of CE
+evolution described above. We save the stellar structure of the
+companion star at the onset of RLOF, and compute the binding energy of
+its envelope at that instant. The star is still on the MS at that
+instant and has a central hydrogen mass fraction of $\approx 0.22$. As
+a result, we cannot use the $X=0.01$ or $X=0.1$ definitions for
+defining the core--envelope boundary. Using the $X=0.3$ definition, we
+get the core--envelope boundary to be located at $\approx
+28.6\,\Mdot$, which roughly lies at the boundary of the convective MS
+core of the star. Using this boundary location, and the most
+optimistic assumption that all of the internal energy in the envelope
+is available, we get the effective binding energy of the envelope to
+be $\approx 2.35\times 10^{50}\,\mathrm{erg}$. This corresponds to a
+$\lambda \approx 0.5$. Using the energy balance Eqn.
+\ref{eq:ce_energy_balance}, we find that the minimum
+$\alpha_{\mathrm{CE}}$ that would be required to eject the common
+envelope, and have the remnant core fit inside its roche lobe is
+$\approx 18$. Such a large $\alpha_{\mathrm{CE}}$ implies that the CE
+phase is likely going to fail to eject the envelope, and lead to a
+premature merger between the star and the compact object. Although
+such systems are not GW sources, they could appear as [an energetic
+transient \mr{see work on LFBOTs, including Aldana's} or a
+Thorne-\.Zytkow Object \mr{\citep[e.g,][]{thorne:75, TZO_review}}]
 
 \section{Formation of GW190814} \label{sec:gw190814}
 
-In the previous section, we constructed detailed binary evolution models to demonstrate the past evolutionary history of the most asymmetric HMXB in the Galaxy. However, we also showed that it is unlikely to lead to the formation of a highly asymmetric GW source, as the system is likely to merge in a future CE phase due to the star's high envelope binding energy. This motivates us to compute another set of detailed binary evolution models, and explore scenarios in which a potentially CE phase can be successful, and lead to the formation of a highly asymmetric GW source such as GW190814.
+In the previous section, we constructed detailed binary evolution
+models \mr{at ``high'' metallicity} to demonstrate the past evolutionary history of the most asymmetric HMXB in the Galaxy. However, we also showed that it is unlikely to lead to the formation of a highly asymmetric GW source, as the system is likely to merge in a future CE phase due to the star's high envelope binding energy. This motivates us to compute another set of detailed binary evolution models, and explore scenarios in which a potentially CE phase can be successful, and lead to the formation of a highly asymmetric GW source such as GW190814.
 
-As the current LVK detectors probe the relatively distant universe, the detected GW events likely occured in regions of low metallicity. For this reason, to describe the formation of a GW190814--like binary, we compute MESA models at a metallicty of $Z = Z_\odot/10 = 0.00146$ \red{{should i justify this with a reference?}}.
+As the current LVK detectors probe the relatively distant universe,
+the detected GW events likely occured in regions of low metallicity.
+For this reason, to describe the formation of a GW190814--like binary,
+we compute MESA models at a metallicty of $Z = Z_\odot/10 = 0.00146$
+\red{{should i justify this with a reference?}\mr{I'd say it's
+justified enough}}.
 
-A key difference in stellar evolution at lower metallicity is that the mass lost through line--driven winds becomes signifcantly weaker \cite{2001A&A...369..574V,2007A&A...473..603M}. In the previous section \ref{sec:mesa-xrb-results}, we found that the progenitor of the compact object \red{lost a significant amount of mass during its evolution, and particularly during its core--helium burning phase. This was crucial in lowering its pre--SN mass down to what we inferred from our monte carlo simulations, and also potentially aid in its explodability}.
+A key difference in stellar evolution at lower metallicity is that the
+mass lost through line--driven winds becomes signifcantly weaker
+\citep[e.g.,][]{2001A&A...369..574V,2007A&A...473..603M}. In the
+previous section \ref{sec:mesa-xrb-results}, we found that the progenitor of the compact object \red{lost a significant amount of mass during its evolution, and particularly during its core--helium burning phase. This was crucial in lowering its pre--SN mass down to what we inferred from our monte carlo simulations, \mr{\sout{and also potentially aid in its explodability}}}.
 
 Since we now compute binary evolution models at a lower metallicity, we also lower the initial masses of our stars. However, we emphasize that the broad evolutionary pathway remains the same. For our fiducial GW190814--like model, we start with a binary of $27\,\Mdot+25\,\Mdot$ in a 3.5 day orbit.
 
@@ -347,26 +445,53 @@ The top and bottom panels in Fig. \ref{fig:gw_hr_accretor} show the evolutionary
 
 As stars at lower metallicity are more compact, mass transfer begins slightly later in the evolution. After $5.9 \,\mathrm{Myr}$, the donor star overflows its Roche--Lobe during the MS, initiating Case A mass transfer. This phase lasts for around $0.75 \,\mathrm{Myr}$. Once the donor reaches TAMS, it starts contracting, and detaches itself from its RL. At this stage, the donor star has a mass of $16.9\,\Mdot$, while the accretor has grown to about $34.9\,\Mdot$. Due to the short orbital period, the strong tidal forces prevent the accretor from reaching critical rotation, and mass transfer remains close to fully conservative. The donor soon re--expands once it starts hydrogen shell burning, and starts the second phase of Case AB mass transfer, similar to our fiducial model in Section \ref{sec:mesa-xrb-results}. At the end of this phase, the binary consists of a $14.4\,\Mdot$ donor, and a $37.4\,\Mdot$ accretor in a tight $6.4\,\mathrm{day}$ orbit. Around the same time, the donor contracts and ignites helium in its core, which lasts for $\sim 0.5 \, \rm Myr$. At core--helium depletion, the donor is left with a mass of $12.7\,\Mdot$, with a carbon-oxygen core mass of $10.7\,\Mdot$ (and a central $\rm ^{12}C/^{16}O \sim 0.39$). On the other hand, the accretor, which is now the more massive star in this system has a mass of $37.3\,\Mdot$.
 
-We assume that in some cases, the donor star successfully explodes at the end of its life, and leaves behind a NS, or a low mass BH due to fallback or accretion during the SN. This may resemble the $2.6\,\Mdot$ secondary in GW190814. The compact object may also receive a natal kick at birth. Depending on its strength and direction, a plethora of post--SN outcomes are possible. This is unlike the Galactic HMXB 4U 1700-37, for which we had observational constraints on the post--SN orbit. \red{See discussion for more details on explodability}
-
+We assume that in some cases, the donor star successfully explodes at
+the end of its life, and leaves behind a NS, or a low mass BH due to
+fallback or accretion during the SN. This may resemble the
+$2.6\,\Mdot$ secondary in GW190814. \mr{Although we stop the evolution
+at helium core depletion, we discuss ``explodability'' in Sec.~\ref{}}. The compact object may also
+receive a natal kick at birth, \mr{in analogy with the case of 4U 1700-37}. Depending on its strength and direction, a \mr{variety\sout{plethora}} of post--SN outcomes are possible. This is unlike the Galactic HMXB 4U 1700-37, for which we had observational constraints on the post--SN orbit.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.47\textwidth]{gw_hr_accretor.pdf}
-    \caption{The evolution of the accretor star on the HR diagram. The blue curve highlights Case A mass transfer, while the red curve is for Case AB. The diamond, plus, and star markers correspond to the TAMS, core--helium ignition, and core--helium depletion respectively. The inset panel zooms into the late stages of the core--helium burning phase, where it ascends the RSG branch, and developes a convective envelope (shown in purple)}
+    \caption{The evolution of the accretor star on the HR diagram
+\red{In which binary? Say it in the caption, mention Z, M1, M2 and P
+at ZAMS}. The blue curve highlights Case A mass transfer, while the red curve is for Case AB. The diamond, plus, and star markers correspond to the TAMS, core--helium ignition, and core--helium depletion respectively. The inset panel zooms into the late stages of the core--helium burning phase, where it ascends the RSG branch, and developes a convective envelope (shown in purple)}
     \label{fig:gw_hr_accretor}
 \end{figure}
 
 \subsection{Evolution after first--SN}
 
-For systems that remain bound post--SN, the binary consists of a compact object and a companion star, which was originally the accretor. Depending on the size of the orbit post--SN and the radial evolution of the companion star, it may (or may not) fill its Roche Lobe during its evolution\footnote{We neglect the possible impact of tidal forces.}. If it does fill its RL, a phase of reverse--RLOF onto the compact object will ensue. The outcome of this phase sensitively depends on the evolutionary state of the companion star and the stability of mass transfer. The highly asymmetric mass-ratio of the system ($q = 2.6/37.3 \approx 1/14$) is similar to the mass--ratio of the Galactic HMXB that we described in Section \ref{sec:monte-carlo-results}. We once again assume that mass transfer is likely going to be unstable likely going to become unstable, and lead to a CE phase.
+For systems that remain bound post--SN, the binary consists of a
+compact object and a companion star, which was originally the
+accretor. Depending on the size of the orbit post--SN and the radial
+evolution of the companion star, it may (or may not) fill its Roche
+Lobe during its evolution\footnote{\mr{Since we detach the binaries at
+the end of He core burning of the initially more massive star,
+effectively, we neglect the possible impact of tidal forces after this
+point}.}. If it does fill its RL, a phase of reverse--RLOF onto the compact object will ensue. The outcome of this phase sensitively depends on the evolutionary state of the companion star and the stability of mass transfer. The highly asymmetric mass-ratio of the system ($q = 2.6/37.3 \approx 1/14$) is similar to the mass--ratio of the Galactic HMXB that we described in Section \ref{sec:monte-carlo-results}. We once again assume that mass transfer is likely going to be unstable likely going to become unstable, and lead to a CE phase.
 
 \subsubsection{Fate of CE phase}
 
-We use the $\alpha \lambda$ formalism, as described in Section \ref{xrb-future} to determine the outcome of the CE phase. However, as the post-SN orbital separation can take a range of values, the density structure of the star, and correspondingly the binding energy of its envelope at the onset of CE could vary significantly. To account for the different possible outcomes post--SN, we detach the companion star from the compact object, and follow its evolution as a single star in \textsc{MESA}. This allows us to model the evolution of its density structure and envelope binding energy along with its radial evolution, thereby accounting for different possible post--SN orbital separations.
+We use the $\alpha \lambda$ formalism, as described in Section
+\ref{xrb-future} to determine the outcome of the CE phase. However, as
+the post-SN orbital separation can take a range of values, the density
+structure of the star, and correspondingly the binding energy of its
+envelope at the onset of CE could vary significantly. \mr{This should
+have been explained earlier, and has already been used in the previous
+footnote, maybe move to methods}\red{To account for the different possible outcomes post--SN, we detach the companion star from the compact object, and follow its evolution as a single star in \textsc{MESA}. This allows us to model the evolution of its density structure and envelope binding energy along with its radial evolution, thereby accounting for different possible post--SN orbital separations.}
 
-In the top panel of Fig. \ref{fig:gw_be}, we show the effective binding energy of the envelope of the companion star as a function of its total stellar radius. The blue curve includes the contribution of internal energy to the effective binding energy of the envelope, while the golden color does not include the internal energy, and corresponds to the gravitational binding energy of the envelope The solid lines corresponds to the $X = 0.1$ limit for defining the core--envelope boundary as described in Section \ref{xrb-future}, while the shaded bands encompass the $X = 0.01$ and $X = 0.3$ limits for defining the boundary. For most of its evolution, as the star grows in radius, there is a moderate decrease in its binding energy. However, during its core--helium burning phase, when it has grown to a size of almost $1250\,\Rdot$, it developes a loosely bound convective envelope and starts ascending the Red Super Giant (RSG) branch. This dramatically decreases the effective binding energy of its envelope, which may make it easier to eject during a potential CE phase \citep{2021A&A...645A..54K}.
+In the top panel of Fig. \ref{fig:gw_be}, we show the effective
+binding energy of the envelope of the companion star as a function of
+its total stellar radius, \mr{which we use as a proxy for the temporal
+evolution}. The blue curve includes the contribution of internal
+energy to the effective binding energy of the envelope
+\mr{($\alpha_{\rm th}=1$ in Eq.~\ref{eq:BE_def})}, while the golden
+color does not include the internal energy \mr{($\alpha_{\rm th}=0$)}, and corresponds to the gravitational binding energy of the envelope. The solid lines corresponds to the $X = 0.1$ limit for defining the core--envelope boundary as described in Section \ref{xrb-future}, while the shaded bands encompass the $X = 0.01$ and $X = 0.3$ limits for defining the boundary. For most of its evolution, as the star grows in radius, there is a moderate decrease in its binding energy. However, during its core--helium burning phase, when it has grown to a size of almost $1250\,\Rdot$, it developes a loosely bound convective envelope and starts ascending the Red Super Giant (RSG) branch. This dramatically decreases the effective binding energy of its envelope, which may make it easier to eject during a potential CE phase \citep{2021A&A...645A..54K}.
 
-Using the effective binding energy of the star's envelope, and the method described in Section \ref{xrb-future}, we calculate the minimum $\alpha_{\text{CE}}$ that would be required to eject it as a function of its stellar radius. This is shown in the bottom panel of Fig. \ref{fig:gw_be}, where the line colors and shaded bands follow the same convention as the top panel. We can see that for most of its evolution, when $R_* < 1250\,\Rdot$, the minimum $\alpha_{\text{CE}}$ required to successfully eject the envelope is greater than one. These correspond to the cases where we assume that the CE phase would fail, and there would be a premature merger between the compact object and the core of the star.
+Using the effective binding energy of the star's envelope, and the
+method described in Section \ref{xrb-future}, we calculate the minimum
+$\alpha_{\text{CE}}$ that would be required to eject it as a function of its stellar radius. This is shown in the bottom panel of Fig. \ref{fig:gw_be}, where the line colors and shaded bands follow the same convention as the top panel. We can see that for most of its evolution, when $R_* < 1250\,\Rdot$, the minimum $\alpha_{\text{CE}}$ required to successfully eject the envelope is \mr{much} greater than one. These correspond to the cases where we assume that the CE phase would fail, and there would be a premature merger between the compact object and the core of the star.
 
 However, for $R_* > 1250\,\Rdot$, we find that the minimum $\alpha_{\text{CE}}$ required to eject falls below one. In such scenarios, we assume that the CE phase is successful in ejecting the envelope, and would leave behind a tight, and potentially circularized binary consisting of the remnant core of the star that lost its envelope, and the compact object.
 
@@ -380,6 +505,11 @@ However, for $R_* > 1250\,\Rdot$, we find that the minimum $\alpha_{\text{CE}}$ 
 \subsubsection{Forming a highly asymmetric mass-ratio double compact system}
 
 In our \textsc{MESA} models, we find that for the systems that survive the CE phase, their remnant cores just have $\approx 0.03\,\mathrm{Myr}$ left to the end of core--helium burning, and have a helium core mass of $\approx 20\,\Mdot$. The size of the helium core is $\approx 0.8\,\Rdot$. For an $\alpha_{\mathrm{CE}} = 1$, we find that the post--CE orbital separation is $\approx 2-5\,\Rdot$, depending on whether we  exclude or include the contribution of internal energy. In either case, the remnant core comfortably fits inside the new RL. We assume that the mass and size of the core will not change significantly due to the short time left. At core--collapse, such a heavy core is potentially too large to explode. It will likely implode on itself, and leave behind a $\approx 20\,\Mdot$ BH. These systems now consists of a NS or a low--mass BH with a massive $\approx 20\,\Mdot$ BH companion in a tight orbit of a few solar radii. The subsequent evolution of this system will be dominated by a GW--driven inspiral. For post--CE orbital separations of $2-5\,\Rdot$, we find that it takes at most $\approx 80\,\mathrm{Myr}$ for the inspiral to end in a finale as a compact binary coalescence that may be observed by the LVK detectors \citep{Peters:1963ux}. These signals would consist of a low mass compact object that may be a NS or BH, with a massive BH companion, that would appear similar to the highly asymmetric mass ratio event GW190814.
+\mr{Discuss your predictions: since this is a post-CE system, you
+expect no eccentricity at formation and thus at merger, since the
+pre-CE $q$ was so extreme, we don't expect the BH, formed second, to
+spin. These sound trivial to you, but they won't be to the readers and
+should be said explicitly!}
 
  \section{Rates of GW190814--like events} \label{rates}
 
@@ -390,13 +520,36 @@ In our \textsc{MESA} models, we find that for the systems that survive the CE ph
     &= 232\, \mathrm{Gpc}^{-3} \mathrm{yr}^{-1}
  \end{align}
 
- However, as we demonstrated in Sections \ref{sec:mesa-xrb-results} and \ref{sec:gw190814}, not all highly asymmetric mass--ratio HMXBs will form GW190814--like events. We found that a successful CE phase can occur if the companion star fills its Roche--Lobe when it is a RSG with a loosely bound convective envelope. This requires the size of the Roche Lobe after the first--SN to be $\approx 1000-2000\, \Rdot$. In Fig. \ref{fig:gw_post_SN_rl}, we show the distribution of possible RL sizes after the first--SN. We have assumed that a $12.7\,\Mdot$ star explodes to leave behind a $2.6\,\Mdot$ compact object, and it has a companion of $\approx 37\,\Mdot$ in a $\approx 7\,\mathrm{day}$ orbit. The only free parameters that will now determine the size of the post--SN RL are the magnitude and direction of the natal kick. We assume the natal kicks ($v_{\mathrm{kick}}$) to arise from a maxwellian distribution with a scale of $265 \, \mathrm{km/s}$ \citep{2005MNRAS.360..974H}. The yellow shaded band corresponds to post--SN Roche Lobes that are smaller than $200\,\Rdot$, which would only appear as a highly asymmetric mass-ratio HMXB, but not form a GW source. The purple shaded band corresponds to post--SN Roche Lobes that are $\approx 1000-2000\, \Rdot$, which will likely have a successful CE phase and form a highly asymmetric mass-ratio GW source. We find that for every $100$ systems that have a post--SN RL $<\,200\,\Rdot$, only $1$ system has a post--SN RL of $\approx 1000-2000\, \Rdot$. Thus we can estimate the local rate of highly asymmetric GW190814--like events to be
+ However, as we demonstrated in Sections \ref{sec:mesa-xrb-results}
+and \ref{sec:gw190814}, not all highly asymmetric mass--ratio HMXBs
+will form GW190814--like events. We found that a successful CE phase
+can occur if the companion star fills its Roche--Lobe when it is a RSG
+with a loosely bound convective envelope. This requires the size of
+the Roche Lobe after the first--SN to be $\approx 1000-2000\, \Rdot$.
+In Fig. \ref{fig:gw_post_SN_rl}, we show the distribution of possible
+RL sizes after the first--SN. \mr{why these numbers? can you explain
+referring to your detailed model?}We have assumed that a $12.7\,\Mdot$
+star explodes to leave behind a $2.6\,\Mdot$ compact object, and it
+has a companion of $\approx 37\,\Mdot$ in a $\approx 7\,\mathrm{day}$
+orbit. The only free parameters that will now determine the size of
+the post--SN RL are the magnitude and direction of the natal kick. We
+assume the natal kicks ($v_{\mathrm{kick}}$) to arise from a
+\mr{M}axwellian distribution with a scale of $265 \, \mathrm{km/s}$
+\citep{2005MNRAS.360..974H} \mr{[would really be better to redo this
+with Disberg at least]}. The yellow shaded band corresponds to post--SN Roche Lobes that are smaller than $200\,\Rdot$, which would only appear as a highly asymmetric mass-ratio HMXB, but not form a GW source. The purple shaded band corresponds to post--SN Roche Lobes that are $\approx 1000-2000\, \Rdot$, which will likely have a successful CE phase and form a highly asymmetric mass-ratio GW source. We find that for every $100$ systems that have a post--SN RL $<\,200\,\Rdot$, only $1$ system has a post--SN RL of $\approx 1000-2000\, \Rdot$. Thus we can estimate the local rate of highly asymmetric GW190814--like events to be
 
  \begin{equation}
     \rm \mathcal{R}_{\mathrm{GW}} \sim 0.01 \times \mathcal{R}_{\mathrm{HMXB}} = 2.32\, Gpc^{-3} yr^{-1}
  \end{equation}
 
- This back--of--the--envelope estimate is consistent with the $\rm 1-23\, Gpc^{-3} yr^{-1}$ rate of GW190814--like events estimate by the LVK collaboration \citep{2020ApJ...896L..44A}, which is based on a single event (GW190814), and is a poisson rate. However, a detailed rate caclulation requires the use of population--synthesis techniques to account for the star formation history, metallicity dependence, and other uncertainties in linking Galactic HMXBs to GW events, which we defer to future work.
+ This back--of--the--envelope estimate is consistent with the
+ $\rm 1-23\, Gpc^{-3} yr^{-1}$ rate of GW190814--like events estimate
+ by the LVK collaboration \citep{2020ApJ...896L..44A}, based on a single event (GW190814). %, and is a poisson rate.
+ However, a detailed rate calculation requires the use of
+ population--synthesis techniques to account for the star formation
+ history, metallicity dependence, and other uncertainties in linking
+ Galactic HMXBs to GW events % , which we defer to future work
+\mr{\cite[e.g.,][]{2020ApJ...899L...1Z, 2025arXiv251116648M}}.
 
  \begin{figure}[htbp]
     \centering
