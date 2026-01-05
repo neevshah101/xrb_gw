@@ -559,7 +559,8 @@ with Disberg at least]}. The yellow shaded band corresponds to post--SN Roche Lo
 \end{figure}
 
 \section{Discussion} \label{sec:highlight}
-
+\mr{General comment: this is a long discussion, almost 3 pages, we
+should aim at compressing}
 \subsection{Explodability of first--born compact object}\label{sec:explodability}
 
 In Sections \ref{sec:mesa-xrb-results} and \ref{sec:gw190814}, we described a potential evolutionary pathway to forming highly asymmetric Galactic XRBs and GW sources. In both scenarios, there are two keys steps that aid in forming the asymmetric mass-ratio systems. The first is conservative mass transfer, which allows the mass ratio of the binary to invert significantly. Secondly, we also require that the the donor star successfully explodes at the end of its life, and leaves behind a low mass compact object which could either be a NS or a low mass BH.
@@ -630,7 +631,11 @@ Software citation information aggregated using \texttt{\href{https://www.tomwagg
 
 \section{Resolution Tests}
 
-To ensure that our results are robust to the choice of spatial and temporal resolution of mesh points in \textsc{MESA}, we repeated our fiducial binary evolution calculations by increasing the number of mesh points, i.e. decreasing \texttt{mesh\_delta\_coeff} and \texttt{mesh\_time\_coeff} by a factor of $2/3$. In Fig \ref{fig:resolution_test}, we show that the evolution of the donor and accretor stars on the HR diagram for our fiducial models to explain the evolutionary history of the HMXB 4U 1700-37 (left panel) and a GW190814--like system (right panel). The blue and red solid colors represent the default resolution for the donor and accretor, where we have $\mathrm{\texttt{mesh\_delta\_coeff}} \equiv \Delta_x = 1$ and $\mathrm{\texttt{mesh\_time\_coeff}} \equiv \Delta_t = 0.8$. The cyan and pink dashed lines represent higher resolution models, where we decrease both $\Delta_x$ and $\Delta_t$ by a factor of $2/3$. We find that the evolutionary tracks of both the donor and accretor stars are nearly identical for both choices of resolution, demonstrating that our results are robust and there is convergence in the numerical treatment of binary evolution in \textsc{MESA}.
+To ensure that our results are robust to the choice of spatial and
+temporal resolution \mr{\sout{of mesh points} in \textsc{MESA}}, we
+repeated our fiducial binary evolution calculations by increasing the number of mesh points \mr{by} decreasing \texttt{mesh\_delta\_coeff} and \texttt{mesh\_time\_coeff} by a factor of $2/3$. In Fig \ref{fig:resolution_test}, we show that the evolution of the donor and accretor stars on the HR diagram for our fiducial models to explain the evolutionary history of the HMXB 4U 1700-37 (left panel) and a GW190814--like system (right panel). The blue and red solid colors represent the default resolution for the donor and accretor, where we have $\mathrm{\texttt{mesh\_delta\_coeff}} \equiv \Delta_x = 1$ and $\mathrm{\texttt{mesh\_time\_coeff}} \equiv \Delta_t = 0.8$. The cyan and pink dashed lines represent higher resolution models, where we decrease both $\Delta_x$ and $\Delta_t$ by a factor of $2/3$. We find that the evolutionary tracks of both the donor and accretor stars are nearly identical for both choices of resolution, demonstrating that our results are robust and there is convergence in the numerical treatment of binary evolution in \textsc{MESA}.
+\mr{Mention number of mesh points in the final models and number of
+timesteps at each resolution in the text}.
 
 \begin{figure}
 \gridline{\fig{xrb_hr_resolution_test.pdf}{0.47\textwidth}{(a)}
