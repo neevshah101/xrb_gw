@@ -442,12 +442,11 @@ The top and bottom panels in Fig. \ref{fig:gw_hr_accretor} show the evolutionary
 
 As stars at lower metallicity are more compact, mass transfer begins slightly later in the evolution. After $5.9 \,\mathrm{Myr}$, the donor star overflows its Roche--Lobe during the MS, initiating Case A mass transfer. This phase lasts for around $0.75 \,\mathrm{Myr}$. Once the donor reaches TAMS, it starts contracting, and detaches itself from its RL. At this stage, the donor star has a mass of $16.9\,\Mdot$, while the accretor has grown to about $34.9\,\Mdot$. Due to the short orbital period, the strong tidal forces prevent the accretor from reaching critical rotation, and mass transfer remains close to fully conservative. The donor soon re--expands once it starts hydrogen shell burning, and starts the second phase of Case AB mass transfer, similar to our fiducial model in Section \ref{sec:mesa-xrb-results}. At the end of this phase, the binary consists of a $14.4\,\Mdot$ donor, and a $37.4\,\Mdot$ accretor in a tight $6.4\,\mathrm{day}$ orbit. Around the same time, the donor contracts and ignites helium in its core, which lasts for $\sim 0.5 \, \rm Myr$. At core--helium depletion, the donor is left with a mass of $12.7\,\Mdot$, with a carbon-oxygen core mass of $10.7\,\Mdot$ (and a central $\rm ^{12}C/^{16}O \sim 0.39$). On the other hand, the accretor, which is now the more massive star in this system has a mass of $37.3\,\Mdot$.
 
-We assume that in some cases, the donor star successfully explodes at
+Since we stop evolving our donor models at core helium depletion, we neglect the impact of binary and tidal interactions after this point. We assume that in some cases, the donor star successfully explodes at
 the end of its life, and leaves behind a NS, or a low mass BH due to
 fallback or accretion during the SN. This may resemble the
-$2.6\,\Mdot$ secondary in GW190814. Although we stop the evolution
-at core helium depletion, we discuss ``explodability'' in Sec.~\ref{sec:explodability}. The compact object may also
-receive a natal kick at birth, \mr{in analogy with the case of 4U 1700-37}. Depending on its strength and direction, a \mr{variety\sout{plethora}} of post--SN outcomes are possible. This is unlike the Galactic HMXB 4U 1700-37, for which we had observational constraints on the post--SN orbit.
+$2.6\,\Mdot$ secondary in GW190814. We discuss ``explodability'' in more detail in Sec.~\ref{sec:explodability}. The compact object may also
+receive a natal kick at birth, \mr{in analogy with the case of 4U 1700-37}. Depending on its strength and direction, a variety of post--SN outcomes are possible. This is unlike the Galactic HMXB 4U 1700-37, for which we had observational constraints on the post--SN orbit.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.47\textwidth]{gw_hr_accretor.pdf}
@@ -461,10 +460,9 @@ For systems that remain bound post--SN, the binary consists of a
 compact object and a companion star, which was originally the
 accretor. Depending on the size of the orbit post--SN and the radial
 evolution of the companion star, it may (or may not) fill its Roche
-Lobe during its evolution\footnote{\mr{Since we detach the binaries at
-the end of He core burning of the initially more massive star,
-effectively, we neglect the possible impact of tidal forces after this
-point}.}. If it does fill its RL, a phase of reverse--RLOF onto the compact object will ensue. The outcome of this phase sensitively depends on the evolutionary state of the companion star and the stability of mass transfer. The highly asymmetric mass-ratio of the system ($q = 2.6/37.3 \approx 1/14$) is similar to the mass--ratio of the Galactic HMXB that we described in Section \ref{sec:monte-carlo-results}. We once again assume that mass transfer is likely going to be unstable likely going to become unstable, and lead to a CE phase.
+Lobe during its evolution %\footnote{\mr{Since we detach the binaries at the end of He core burning of the initially more massive star, effectively, we neglect the possible impact of tidal forces after this point}.}
+. 
+If it does fill its RL, a phase of reverse--RLOF onto the compact object will ensue. The outcome of this phase sensitively depends on the evolutionary state of the companion star and the stability of mass transfer. The highly asymmetric mass-ratio of the system ($q = 2.6/37.3 \approx 1/14$) is similar to the mass--ratio of the Galactic HMXB that we described in Section \ref{sec:monte-carlo-results}. We once again assume that mass transfer is likely going to be unstable likely going to become unstable, and lead to a CE phase.
 
 \subsubsection{Fate of CE phase}
 
@@ -474,7 +472,9 @@ the post-SN orbital separation can take a range of values, the density
 structure of the star, and correspondingly the binding energy of its
 envelope at the onset of CE could vary significantly. \mr{This should
 have been explained earlier, and has already been used in the previous
-footnote, maybe move to methods}\red{To account for the different possible outcomes post--SN, we detach the companion star from the compact object, and follow its evolution as a single star in \textsc{MESA}. This allows us to model the evolution of its density structure and envelope binding energy along with its radial evolution, thereby accounting for different possible post--SN orbital separations.}
+footnote, maybe move to methods}\red{I removed the footnote and mentioned it on line 681-683. This was not in methods, as the methods section was part of the evolution of the XRB, where this was not needed. I think its more appropriate to keep this here.}
+
+\red{To account for the different possible outcomes post--SN, we detach the companion star from the compact object, and follow its evolution as a single star in \textsc{MESA}. This allows us to model the evolution of its density structure and envelope binding energy along with its radial evolution, thereby accounting for different possible post--SN orbital separations.}
 
 In the top panel of Fig. \ref{fig:gw_be}, we show the effective
 binding energy of the envelope of the companion star as a function of
@@ -499,12 +499,12 @@ However, for $R_* > 1250\,\Rdot$, we find that the minimum $\alpha_{\text{CE}}$ 
 
 \subsubsection{Forming a highly asymmetric mass-ratio double compact system}
 
-In our \textsc{MESA} models, we find that for the systems that survive the CE phase, their remnant cores just have $\approx 0.03\,\mathrm{Myr}$ left to the end of core--helium burning, and have a helium core mass of $\approx 20\,\Mdot$. The size of the helium core is $\approx 0.8\,\Rdot$. For an $\alpha_{\mathrm{CE}} = 1$, we find that the post--CE orbital separation is $\approx 2-5\,\Rdot$, depending on whether we  exclude or include the contribution of internal energy. In either case, the remnant core comfortably fits inside the new RL. We assume that the mass and size of the core will not change significantly due to the short time left. At core--collapse, such a heavy core is potentially too large to explode. It will likely implode on itself, and leave behind a $\approx 20\,\Mdot$ BH. These systems now consists of a NS or a low--mass BH with a massive $\approx 20\,\Mdot$ BH companion in a tight orbit of a few solar radii. The subsequent evolution of this system will be dominated by a GW--driven inspiral. For post--CE orbital separations of $2-5\,\Rdot$, we find that it takes at most $\approx 80\,\mathrm{Myr}$ for the inspiral to end in a finale as a compact binary coalescence that may be observed by the LVK detectors \citep{Peters:1963ux}. These signals would consist of a low mass compact object that may be a NS or BH, with a massive BH companion, that would appear similar to the highly asymmetric mass ratio event GW190814.
+In our \textsc{MESA} models, we find that for the systems that survive the CE phase, their remnant cores just have $\approx 0.03\,\mathrm{Myr}$ left to the end of core--helium burning, and have a helium core mass of $\approx 20\,\Mdot$. The size of the helium core is $\approx 0.8\,\Rdot$. For an $\alpha_{\mathrm{CE}} = 1$, we find that the post--CE orbital separation is $\approx 2-5\,\Rdot$, depending on whether we  exclude or include the contribution of internal energy. In either case, the remnant core comfortably fits inside the new RL. We assume that the mass and size of the core will not change significantly due to the short time left. At core--collapse, such a heavy core is potentially too large to explode. It will likely implode on itself \red{with little to no mass loss}, and leave behind a $\approx 20\,\Mdot$ BH. \red{If we also assume that such massive BH's receive negligilbe natal kicks}, these systems would now consists of a NS or a low--mass BH with a massive $\approx 20\,\Mdot$ BH companion in a tight \red{circular} orbit of a few solar radii. The subsequent evolution of this system will be dominated by a GW--driven inspiral. For post--CE orbital separations of $2-5\,\Rdot$, we find that it takes at most $\approx 80\,\mathrm{Myr}$ for the inspiral to end in a finale as a compact binary coalescence that may be observed by the LVK detectors \citep{Peters:1963ux}. These signals would consist of a low mass compact object that may be a NS or BH, with a massive BH companion, that would appear similar to the highly asymmetric mass ratio event GW190814. 
 \mr{Discuss your predictions: since this is a post-CE system, you
 expect no eccentricity at formation and thus at merger, since the
 pre-CE $q$ was so extreme, we don't expect the BH, formed second, to
 spin. These sound trivial to you, but they won't be to the readers and
-should be said explicitly!} \red{I've discussed the spin in the Discussion}
+should be said explicitly!} \red{I cant "predict" eccentricity, as it depends on the natal kick or blauuw kick that the massive BH receives. Here I have "assumed" they are both 0, and hence no eccentricity. I've discussed the spin in the Discussion}
 
  \section{Rates of GW190814--like events} \label{rates}
 
