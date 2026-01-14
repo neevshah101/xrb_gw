@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex xrb_gw"] 1768349920.09187 "xrb_gw.aux" "xrb_gw.bbl" "xrb_gw" 1768349921.50496 0
+["bibtex xrb_gw"] 1768351821.4712 "xrb_gw.aux" "xrb_gw.bbl" "xrb_gw" 1768351822.88037 0
   "./aasjournalv7.bst" 1755047648.66759 38788 af6489f4b275f4b9c2f0b12c5ef4a113 ""
   "./xrb_gw.bib" 1768348891.72439 194101 fd13d62bc52c53d49611d91f378a3e16 ""
-  "xrb_gw.aux" 1768349921.1903 50046 8c183d83872426179173c2b0d4bbaf09 "pdflatex"
+  "xrb_gw.aux" 1768351822.55386 49938 7729580144e6f57a7af9a5fb9da6213e "pdflatex"
   (generated)
   "xrb_gw.bbl"
   "xrb_gw.blg"
   (rewritten before read)
-["pdflatex"] 1768349920.24677 "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" "xrb_gw.pdf" "xrb_gw" 1768349921.50522 0
-  "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" 1768349918.53829 94827 3789d3b7ec0653cd1f5c2c61c819389a ""
+["pdflatex"] 1768351821.61004 "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" "xrb_gw.pdf" "xrb_gw" 1768351822.88061 0
+  "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" 1768351819.95016 97238 afb54380b1d6801ac6c082437e066d65 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -146,12 +146,12 @@
   "gw_fiducial_be_radius.pdf" 1766717925.92128 288686 162c2efef88688a5cb99e0c29203c1c0 ""
   "gw_hr_accretor.pdf" 1768015778.95741 141538 08396eff0dec2c2b21f697edc137f483 ""
   "gw_hr_resolution_test.pdf" 1768015778.95933 176526 1e353307d6a7d26270e72b8e8eac7137 ""
-  "xrb-monte-carlo-mass-period-kick.pdf" 1768334964.95125 908760 e8263b4417cc695f665fb82e283a5b29 ""
+  "xrb-monte-carlo-mass-period-kick.pdf" 1768350778.03489 995287 b70166e5792a9483e27b2f776f3f0f05 ""
   "xrb_fiducial_hr.pdf" 1757011586.69966 167473 7c22d695af2cf6a2e88ce38ac9f8d03a ""
-  "xrb_gw.aux" 1768349921.1903 50046 8c183d83872426179173c2b0d4bbaf09 "pdflatex"
-  "xrb_gw.bbl" 1768349920.2439 77675 9d8e600a74027c82904df37870a1eb11 "bibtex xrb_gw"
-  "xrb_gw.out" 1768349921.19332 5021 3a634b75285c2829547b1e381ac6d763 "pdflatex"
-  "xrb_gw.tex" 1768349918.53829 94827 3789d3b7ec0653cd1f5c2c61c819389a ""
+  "xrb_gw.aux" 1768351822.55386 49938 7729580144e6f57a7af9a5fb9da6213e "pdflatex"
+  "xrb_gw.bbl" 1768351821.60709 77364 c1cc8bcef6bd17e269ae8a64faf8366d "bibtex xrb_gw"
+  "xrb_gw.out" 1768351822.55645 5021 3a634b75285c2829547b1e381ac6d763 "pdflatex"
+  "xrb_gw.tex" 1768351819.95016 97238 afb54380b1d6801ac6c082437e066d65 ""
   "xrb_hr_resolution_test.pdf" 1768015778.96565 192614 1783d621b0c506cb2c6cf56a47484f88 ""
   (generated)
   "xrb_gw.aux"
