@@ -1,0 +1,1 @@
+Fix Fig 6 legend on arXiv and ApJ submission
