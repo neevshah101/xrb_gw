@@ -220,11 +220,11 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti9.tfm
 INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
-INPUT ./xrb-monte-carlo-mass-period-kick.pdf
-INPUT ./xrb-monte-carlo-mass-period-kick.pdf
-INPUT ./xrb-monte-carlo-mass-period-kick.pdf
-INPUT ./xrb-monte-carlo-mass-period-kick.pdf
-INPUT ./xrb-monte-carlo-mass-period-kick.pdf
+INPUT ./xrb-monte-carlo-mass-period-kick-v2.pdf
+INPUT ./xrb-monte-carlo-mass-period-kick-v2.pdf
+INPUT ./xrb-monte-carlo-mass-period-kick-v2.pdf
+INPUT ./xrb-monte-carlo-mass-period-kick-v2.pdf
+INPUT ./xrb-monte-carlo-mass-period-kick-v2.pdf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT ./xrb_fiducial_hr_mass.pdf
 INPUT ./xrb_fiducial_hr_mass.pdf
