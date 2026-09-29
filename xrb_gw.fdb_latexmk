@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex xrb_gw"] 1785282368.91798 "xrb_gw.aux" "xrb_gw.bbl" "xrb_gw" 1785282370.52278 0
+["bibtex xrb_gw"] 1790643580.27382 "xrb_gw.aux" "xrb_gw.bbl" "xrb_gw" 1790643581.78897 0
   "./aasjournalv7.bst" 1755047648.66759 38788 af6489f4b275f4b9c2f0b12c5ef4a113 ""
-  "./xrb_gw.bib" 1774992313.30185 288971 a16df0eff0f70c13534dc22b1dfe63de ""
-  "xrb_gw.aux" 1785282370.20835 81564 5aa9648117fb5161b08fd06f5ae82204 "pdflatex"
+  "./xrb_gw.bib" 1790094915.30314 291342 9298c7c76ffe23e9ab9daa0fb9c82e76 ""
+  "xrb_gw.aux" 1790643581.47205 82100 58e23439a48dd85e1e1fdb641560ecab "pdflatex"
   (generated)
   "xrb_gw.bbl"
   "xrb_gw.blg"
   (rewritten before read)
-["pdflatex"] 1785282369.0786 "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" "xrb_gw.pdf" "xrb_gw" 1785282370.52324 0
-  "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" 1785282366.9658 104553 c1419f8763854dd7ec5ce6fb7e570d46 ""
+["pdflatex"] 1790643580.44152 "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" "xrb_gw.pdf" "xrb_gw" 1790643581.78926 0
+  "/Users/neevshah/PhD/XRB/xrb_gw/xrb_gw.tex" 1790643578.46685 105692 53864a3c448a7c58b10291c4783e0a88 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
@@ -25,6 +25,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1136768653 1332 1fde11373e221473104d6cc5993f046e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm" 1136768653 1328 5442e22a7072966dbaf88ca900acf3f0 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm" 1136768653 1532 9162035f4e7176612125649e348e2195 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm" 1136768653 1300 63a6111ee6274895728663cf4b4e7e81 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
@@ -50,6 +51,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb" 1248133631 32166 b0c356b15f19587482a9217ce1d8fa67 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1248133631 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb" 1248133631 36554 b67dc2cfa451409e100b3fcf5f506509 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1248133631 32001 6aeea3afe875097b1eb0da29acd61e28 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -146,7 +148,7 @@
   "Orcid-ID.png" 1755047652.70996 27604 8527c7c3c14d5c207af947385c09fd77 ""
   "aastex701.cls" 1767051372.72192 387416 77a0bd6ae683b303b774445bebaa5a79 ""
   "grid.pdf" 1770858513.28112 240773 1392f96c212590a9d8db073a34e3c50a ""
-  "gw-post-SN-rl-kicks.pdf" 1770938823.73895 169353 0ef9b78c97455ffcd30d3cc62566e3b0 ""
+  "gw-post-SN-rl-periastron.pdf" 1790640911.97493 173481 658100d5e4738079b3a2cdbdbe48cce9 ""
   "gw-xrb-catalog.pdf" 1770858513.33886 142328 7878b23d68cca546d8c623ead4f21529 ""
   "gw_fiducial_be_radius.pdf" 1770858513.30117 285299 7ba0db819e983f158586f77f161cbcc0 ""
   "gw_hr_accretor_mass.pdf" 1770858513.31158 311333 3d7651d40ed9fe314c3f93b0ba34bc48 ""
@@ -154,10 +156,10 @@
   "xrb-monte-carlo-mass-period-kick-ecc.pdf" 1777076664.12156 3160511 a909f61f545b08c1f626c0ad390e3898 ""
   "xrb-monte-carlo-mass-period-kick-v2.pdf" 1777159733.54338 775009 e8d98d68082c83ba2627b9fcf544abb0 ""
   "xrb_fiducial_hr_mass.pdf" 1770858513.34913 241138 91bb7ba4409669bdf8500f5e172009cb ""
-  "xrb_gw.aux" 1785282370.20835 81564 5aa9648117fb5161b08fd06f5ae82204 "pdflatex"
-  "xrb_gw.bbl" 1785282369.07492 122658 9baebdd882d4e0538819edbc5bc7bc05 "bibtex xrb_gw"
-  "xrb_gw.out" 1785282370.2132 5644 fc55fcce74131e0aa5b492f7e92e34a5 "pdflatex"
-  "xrb_gw.tex" 1785282366.9658 104553 c1419f8763854dd7ec5ce6fb7e570d46 ""
+  "xrb_gw.aux" 1790643581.47205 82100 58e23439a48dd85e1e1fdb641560ecab "pdflatex"
+  "xrb_gw.bbl" 1790643580.43845 123790 4473c14894e6d13958521ded8afa57a7 "bibtex xrb_gw"
+  "xrb_gw.out" 1790643581.47655 5644 fc55fcce74131e0aa5b492f7e92e34a5 "pdflatex"
+  "xrb_gw.tex" 1790643578.46685 105692 53864a3c448a7c58b10291c4783e0a88 ""
   "xrb_hr_resolution_test.pdf" 1770858513.35758 192569 51086cd5cb77f700c4bdcd13508f92e7 ""
   (generated)
   "xrb_gw.aux"
